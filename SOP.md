@@ -33,10 +33,12 @@ Roles: **James** (owner, approves, delivers) · **Agents** (see `agents/`) · **
 
 ## 7 · Layout
 - Duplicate `designs/Teardown Report Template.dc.html` as `designs/<Company> Teardown.dc.html`. Lay `final.md` in section by section (`standards/report-structure.md` maps one to one).
-- Every page fits letter. Export to PDF. Save to `clients/<slug>/`.
+- Lay in the cover doc from `templates/cover-doc.md` the same way (fill its `{{placeholders}}`), in the Analyst Dossier style.
+- Every page fits letter. Export both to PDF. Save to `clients/<slug>/`.
+- Every client package = **report + cover doc**.
 
 ## 8 · Deliver
-- Send with `templates/delivery-email.md`. Offer a call, don't require one.
+- Send the report and cover doc with `templates/delivery-email.md`. Offer a call, don't require one.
 
 ## 9 · Follow up
 - At 30 days: is move 1 running? If yes, introduce move 2. If not, find out why.
