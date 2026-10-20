@@ -40,4 +40,4 @@ clients/<slug>/           brief, captures, drafts, final, fact-check log, PDF
 
 Each rule lives in exactly one file. Agents, the SOP, and the workflow point to `standards/`; they never restate it. Change a standard once and everything downstream follows.
 
-Contact: James Bonaguro · info@intersectionstrategies.co · 708-420-5462
+Contact: James Bonaguro · james@intersectionstrategies.co · 708-420-5462

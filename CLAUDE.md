@@ -1,6 +1,6 @@
 # Instructions for AI assistants
 
-- This repo is private client work for Intersection Strategies (James Bonaguro). Every deliverable says "Prepared by Intersection Strategies" · info@intersectionstrategies.co · 708-420-5462.
+- This repo is private client work for Intersection Strategies (James Bonaguro). Every deliverable says "Prepared by Intersection Strategies" · james@intersectionstrategies.co · 708-420-5462.
 - Before writing or editing any report content, read every file in `standards/`. They override anything else, including older client files and this summary.
 - Agent prompts live in `agents/`. Edit the prompt, not the workflow, to change behavior.
 - Style is Analyst Dossier (`standards/brand.md`): paper #F7F5F0, ink #1A1A1A, oxblood #8B1E2D, Source Serif 4 + IBM Plex Mono. Designs in `designs/` are Design Components (`.dc.html`). Every report page must fit a letter page.
