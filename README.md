@@ -1,6 +1,8 @@
 # Intersection Strategies · Teardowns
 
-Private. Everything needed to sell, produce, and deliver a company teardown: the operating procedure, the standards every report is held to, the agent prompts, the workflow, the templates, and the designs.
+Private. Teardowns are portfolio proof and a door-opener for other work, not a product we sell. No pricing or sales call to action appears in any client-facing file.
+
+Everything needed to produce and deliver a company teardown: the operating procedure, the standards every report is held to, the agent prompts, the workflow, the templates, and the designs.
 
 A teardown is an outside-in review of a company built only from public evidence: what a prospect sees before they ever make contact, and the few moves that would change it.
 

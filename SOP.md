@@ -1,11 +1,13 @@
 # Standard operating procedure
 
-Roles: **James** (owner, sells, approves, delivers) · **Agents** (see `agents/`) · **GPT** (writes the independent second draft).
+Teardowns are portfolio proof and a door-opener for other work, not a product. No pricing, packages, or sales call to action in anything a client sees.
 
-## 1 · Pitch
-- Use `designs/Teardown Pitch Deck.dc.html`. Set prospect name and prices in its Tweaks.
+Roles: **James** (owner, approves, delivers) · **Agents** (see `agents/`) · **GPT** (writes the independent second draft).
+
+## 1 · Introduce
+- Use `designs/Teardown Pitch Deck.dc.html`. Set the prospect name in its Tweaks.
 - Offer two uses: a **self** teardown (their own company) or a **competitor** teardown (a rival).
-- Never quote fees inside the report itself.
+- Never quote fees or packages anywhere client-facing.
 
 ## 2 · Kickoff (15 min)
 - Copy `templates/brief.json` to `clients/<slug>/brief.json`.

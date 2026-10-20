@@ -8,6 +8,9 @@ Attached is the teardown I mentioned. It's the same outside-in review I run on a
 
 If you only read one page, read page 2. If you only do one thing, start with move 1 on page [n].
 
-Happy to walk through it on a call whenever works, but it stands on its own.
+How it's made: public evidence only, every fact sourced and tagged, and the moves ranked so you know where to start. [One line on the other work Intersection Strategies does, if relevant to them.]
 
-James
+It stands on its own. If a question comes up, I'm easy to reach.
+
+James Bonaguro · Intersection Strategies
+info@intersectionstrategies.co · 708-420-5462
