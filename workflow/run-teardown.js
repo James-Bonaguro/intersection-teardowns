@@ -9,12 +9,12 @@ export const meta = {
 };
 
 const a = args ?? {};
-const REPO = a.repo_path || "intersection-teardowns";
+const REPO = a.repo_path || ".";
 const slug = a.slug;
 const DIR = REPO + "/clients/" + slug + "/";
 if (!slug || !["draft", "finish"].includes(a.stage)) {
   return { __hatchWorkflowControl: "blocked", result: { blocked_reason: "missing_inputs",
-    message: "Launch with { slug: \"<client-slug>\", stage: \"draft\" | \"finish\", repo_path?: \"intersection-teardowns\" }. The brief must exist at clients/<slug>/brief.json." } };
+    message: "Launch with { slug: \"<client-slug>\", stage: \"draft\" | \"finish\", repo_path?: \"<path to repo root, default .>\" }. The brief must exist at clients/<slug>/brief.json." } };
 }
 
 const role = (file) => "Read " + REPO + "/agents/" + file + ".md and every file in " + REPO + "/standards/, then follow them exactly. " +

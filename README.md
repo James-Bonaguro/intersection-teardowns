@@ -1,6 +1,8 @@
 # Intersection Strategies · Teardowns
 
-Private. Everything needed to sell, produce, and deliver a company teardown: the operating procedure, the standards every report is held to, the agent prompts, the workflow, the templates, and the designs.
+Private. Teardowns are portfolio proof and a door-opener for other work, not a product we sell. No pricing or sales call to action appears in any client-facing file.
+
+Everything needed to produce and deliver a company teardown: the operating procedure, the standards every report is held to, the agent prompts, the workflow, the templates, and the designs.
 
 A teardown is an outside-in review of a company built only from public evidence: what a prospect sees before they ever make contact, and the few moves that would change it.
 
@@ -17,7 +19,7 @@ A teardown is an outside-in review of a company built only from public evidence:
 ## Layout
 
 ```
-SOP.md                    the procedure, sale to follow-up
+SOP.md                    the procedure, kickoff to follow-up
 CLAUDE.md                 instructions for any AI assistant working in this repo
 standards/                rules every report must pass
   house-rules.md
@@ -29,6 +31,8 @@ agents/                   one prompt per role; the workflow loads these
 workflow/run-teardown.js  runs the agents in order
 templates/                brief, outline, checklists, emails
 designs/                  report template, pitch deck, live client reports
+  reference/              outside references (Muse cover doc v1)
+research/                 internal research; never client-facing
 clients/<slug>/           brief, captures, drafts, final, fact-check log, PDF
 ```
 

@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>What Paid Audits and Teardowns Sell For</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=Archivo:wght@400;500;600;700&family=Archivo+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --bg: #f7f4ee;
+        --paper: #fffdf8;
+        --ink: #1c1a16;
+        --ink-2: #4a463d;
+        --ink-3: #7a7466;
+        --line: #ddd5c4;
+        --line-strong: #b9ae95;
+        --accent: #8a3b12;
+        --accent-soft: #f3e3d3;
+        --green: #2e5d43;
+        --green-soft: #dce8dd;
+        --red: #9c2b1e;
+        --red-soft: #f2dcd6;
+        --amber: #8a6d1a;
+        --amber-soft: #efe6c8;
+        --bar-a: #8a3b12;
+        --bar-b: #2e5d43;
+        --bar-c: #4a463d;
+        --shadow: 0 1px 2px rgba(28,26,22,.06), 0 8px 24px rgba(28,26,22,.05);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14120e;
+          --paper: #1d1a15;
+          --ink: #ece7db;
+          --ink-2: #c6bfae;
+          --ink-3: #948c79;
+          --line: #35301f;
+          --line-strong: #57503c;
+          --accent: #e08a4e;
+          --accent-soft: #3a2a1a;
+          --green: #8fc39f;
+          --green-soft: #22362a;
+          --red: #e08a7a;
+          --red-soft: #3d241e;
+          --amber: #d9bc66;
+          --amber-soft: #38301a;
+          --bar-a: #d97c3f;
+          --bar-b: #6fae87;
+          --bar-c: #a89e86;
+          --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.25);
+        }
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Archivo", system-ui, sans-serif;
+        font-size: 16px;
+        line-height: 1.55;
+      }
+      .wrap { max-width: 1060px; margin: 0 auto; padding: 0 20px 72px; }
+      a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+      a:hover { text-decoration-thickness: 2px; }
+
+      /* ---------- Masthead ---------- */
+      .masthead { padding: 44px 0 8px; border-bottom: 3px double var(--line-strong); }
+      .dateline {
+        font-family: "Archivo Mono", monospace; font-size: 12px; letter-spacing: .08em;
+        text-transform: uppercase; color: var(--ink-3);
+        display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between;
+      }
+      h1 {
+        font-family: "Newsreader", Georgia, serif; font-weight: 600;
+        font-size: clamp(34px, 6vw, 56px); line-height: 1.05; letter-spacing: -0.01em;
+        margin: 18px 0 14px;
+      }
+      .standfirst {
+        font-family: "Newsreader", Georgia, serif; font-size: clamp(18px, 2.6vw, 22px);
+        line-height: 1.45; color: var(--ink-2); max-width: 46em; margin: 0 0 22px;
+      }
+
+      /* ---------- Verdict ---------- */
+      .verdict {
+        margin: 28px 0 8px; background: var(--paper); border: 1px solid var(--line-strong);
+        box-shadow: var(--shadow); padding: 26px 28px;
+        display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      }
+      .verdict > div { padding: 4px 26px 4px 0; }
+      .verdict > div + div { border-left: 1px solid var(--line); padding-left: 26px; padding-right: 0; }
+      .verdict .tag {
+        font-family: "Archivo Mono", monospace; font-size: 11px; letter-spacing: .1em;
+        text-transform: uppercase; font-weight: 500;
+      }
+      .tag-no { color: var(--red); }
+      .tag-yes { color: var(--green); }
+      .verdict h2 {
+        font-family: "Newsreader", Georgia, serif; font-size: 24px; font-weight: 600;
+        margin: 8px 0 8px; line-height: 1.2;
+      }
+      .verdict p { margin: 0; color: var(--ink-2); font-size: 15px; }
+      @media (max-width: 680px) {
+        .verdict { grid-template-columns: 1fr; }
+        .verdict > div { padding: 0 0 18px; }
+        .verdict > div + div { border-left: none; border-top: 1px solid var(--line); padding: 18px 0 0; }
+      }
+
+      /* ---------- Sections ---------- */
+      section { margin-top: 52px; }
+      .sec-head { border-bottom: 1px solid var(--line-strong); padding-bottom: 10px; margin-bottom: 20px; }
+      .sec-head .num {
+        font-family: "Archivo Mono", monospace; font-size: 12px; color: var(--accent); letter-spacing: .1em;
+      }
+      .sec-head h2 {
+        font-family: "Newsreader", Georgia, serif; font-weight: 600;
+        font-size: clamp(26px, 4vw, 34px); margin: 4px 0 6px; line-height: 1.15;
+      }
+      .sec-head p { margin: 0; color: var(--ink-2); max-width: 48em; }
+      h3 {
+        font-family: "Newsreader", Georgia, serif; font-size: 21px; font-weight: 600;
+        margin: 30px 0 10px;
+      }
+      p { margin: 0 0 14px; }
+      .lede { font-size: 17px; }
+
+      /* ---------- Price ladder chart ---------- */
+      .chart-card { background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow); padding: 22px 24px 12px; }
+      .chart-card svg { width: 100%; height: auto; display: block; }
+      .chart-note { font-size: 13px; color: var(--ink-3); margin: 6px 2px 10px; }
+
+      /* ---------- Tables ---------- */
+      .table-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--paper); box-shadow: var(--shadow); }
+      table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+      th, td { text-align: left; padding: 11px 14px; vertical-align: top; }
+      thead th {
+        font-family: "Archivo Mono", monospace; font-size: 11px; letter-spacing: .08em;
+        text-transform: uppercase; color: var(--ink-3); font-weight: 500;
+        border-bottom: 2px solid var(--line-strong); background: var(--paper);
+      }
+      tbody tr + tr td { border-top: 1px solid var(--line); }
+      td.price { font-weight: 700; white-space: nowrap; font-variant-numeric: tabular-nums; }
+      td.seller { font-weight: 600; }
+      td .sub { display: block; font-weight: 400; color: var(--ink-3); font-size: 13px; }
+      .src { font-size: 12.5px; white-space: nowrap; }
+      .badge {
+        display: inline-block; font-family: "Archivo Mono", monospace; font-size: 10.5px;
+        letter-spacing: .06em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px;
+        vertical-align: 2px; margin-left: 6px; white-space: nowrap;
+      }
+      .badge-live { background: var(--green-soft); color: var(--green); }
+      .badge-warn { background: var(--amber-soft); color: var(--amber); }
+      .badge-bad { background: var(--red-soft); color: var(--red); }
+
+      /* ---------- Model cards ---------- */
+      .models { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      @media (max-width: 820px) { .models { grid-template-columns: 1fr; } }
+      .model {
+        background: var(--paper); border: 1px solid var(--line); box-shadow: var(--shadow);
+        padding: 22px 22px 8px;
+      }
+      .model .rank {
+        font-family: "Archivo Mono", monospace; font-size: 11px; letter-spacing: .1em;
+        text-transform: uppercase; color: var(--ink-3);
+      }
+      .model h3 { margin: 6px 0 4px; font-size: 22px; }
+      .model .who { font-weight: 600; color: var(--accent); font-size: 14px; margin-bottom: 10px; }
+      .model p { font-size: 14.5px; color: var(--ink-2); }
+      .model ul { margin: 0 0 14px; padding-left: 18px; font-size: 14.5px; color: var(--ink-2); }
+      .model li { margin-bottom: 6px; }
+
+      /* ---------- Callouts ---------- */
+      .callout {
+        border: 1px solid var(--line-strong); background: var(--paper);
+        padding: 20px 24px; margin: 22px 0; box-shadow: var(--shadow);
+      }
+      .callout .k {
+        font-family: "Archivo Mono", monospace; font-size: 11px; letter-spacing: .1em;
+        text-transform: uppercase; color: var(--accent); font-weight: 500;
+      }
+      .callout p { margin: 8px 0 0; }
+      blockquote {
+        margin: 18px 0; padding: 2px 0 2px 20px; border-left: 3px solid var(--accent);
+        font-family: "Newsreader", Georgia, serif; font-size: 19px; line-height: 1.5; font-style: italic;
+      }
+      blockquote + .attrib { font-size: 13.5px; color: var(--ink-3); margin: -8px 0 18px 23px; }
+
+      .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 20px 0; }
+      @media (max-width: 680px) { .stat-row { grid-template-columns: 1fr; } }
+      .stat { border-top: 3px solid var(--ink); padding-top: 12px; }
+      .stat .big { font-family: "Newsreader", Georgia, serif; font-size: 34px; font-weight: 600; line-height: 1.1; }
+      .stat .cap { font-size: 14px; color: var(--ink-2); margin-top: 4px; }
+
+      ul.plain { padding-left: 20px; margin: 0 0 16px; }
+      ul.plain li { margin-bottom: 8px; }
+      .small { font-size: 13.5px; color: var(--ink-3); }
+      .hedge { color: var(--ink-3); font-size: 13.5px; }
+
+      /* ---------- Sources ---------- */
+      .sources { columns: 2; column-gap: 36px; font-size: 13.5px; color: var(--ink-2); }
+      @media (max-width: 680px) { .sources { columns: 1; } }
+      .sources li { margin-bottom: 6px; break-inside: avoid; }
+      footer { margin-top: 56px; border-top: 3px double var(--line-strong); padding-top: 16px; }
+      footer p { font-size: 13px; color: var(--ink-3); max-width: 52em; }
+
+      @media (max-width: 680px) {
+        /* Stack wide tables into labeled rows on phones */
+        .stack table, .stack thead, .stack tbody, .stack tr, .stack td { display: block; width: 100%; }
+        .stack thead { position: absolute; left: -9999px; }
+        .stack tbody tr { padding: 12px 14px; }
+        .stack tbody tr + tr { border-top: 1px solid var(--line); }
+        .stack td { border: none !important; padding: 3px 0; }
+        .stack td::before {
+          content: attr(data-label); display: block;
+          font-family: "Archivo Mono", monospace; font-size: 10.5px; letter-spacing: .08em;
+          text-transform: uppercase; color: var(--ink-3); margin-bottom: 1px;
+        }
+        .stack td.price { font-size: 17px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+
+      <header class="masthead">
+        <div class="dateline">
+          <span>Market research briefing</span>
+          <span>Prices checked October 20, 2026</span>
+        </div>
+        <h1>What paid audits and teardowns actually sell for</h1>
+        <p class="standfirst">
+          Real published prices from named sellers, not theory: what audits and teardowns cost at every level of the market, which sales model actually makes money, and whether a standalone teardown holds up as a product for small local businesses.
+        </p>
+      </header>
+
+      <div class="verdict">
+        <div>
+          <span class="tag tag-no">As the whole business</span>
+          <h2>Qualified no</h2>
+          <p>Every first-hand account with numbers in this research makes its money downstream of the audit, in implementation, a rebuild, or a retainer. No successful named example was found of a mid-priced standalone written report sold cold to local businesses, with nothing behind it.</p>
+        </div>
+        <div>
+          <span class="tag tag-yes">As a paid front door</span>
+          <h2>Qualified yes</h2>
+          <p>Sellers publish video teardowns at $250 to $550 and diagnostics at $1,450 to $2,950 whose fee credits in full toward the implementation work. Sold that way, as a front door to real work, it is a sellable product. What the evidence cannot show is sales volume: no teardown seller's revenue or order counts could be verified.</p>
+        </div>
+      </div>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">01</span>
+          <h2>The price ladder</h2>
+          <p>Typical published ranges by segment, drawn from the named sellers in section 2. The axis is logarithmic because the spread runs from a $25 marketplace gig to a £25,000 independent audit.</p>
+        </div>
+        <div class="chart-card">
+          <svg viewBox="0 0 920 348" role="img" aria-label="Horizontal bar chart of published audit price ranges by market segment, on a logarithmic dollar scale from 25 to 25,000 dollars.">
+            <!-- gridlines: x for $25=70, $100=320.6, $1,000=660.9, $10,000=860? computed below -->
+            <!-- log scale: x(v) = 70 + (log10(v)-log10(25)) / (log10(25000)-log10(25)) * 800 ; range = 3 decades -->
+            <!-- $25 -> 70 ; $100 -> 230.5 ; $1,000 -> 496.3 ; $10,000 -> 762.1 ; $25,000 -> 870 -->
+            <g stroke="var(--line)" stroke-width="1">
+              <line x1="70" y1="18" x2="70" y2="300" />
+              <line x1="230.5" y1="18" x2="230.5" y2="300" />
+              <line x1="496.3" y1="18" x2="496.3" y2="300" />
+              <line x1="762.1" y1="18" x2="762.1" y2="300" />
+              <line x1="870" y1="18" x2="870" y2="300" />
+            </g>
+            <g font-family="Archivo Mono, monospace" font-size="11" fill="var(--ink-3)">
+              <text x="70" y="322" text-anchor="middle">$25</text>
+              <text x="230.5" y="322" text-anchor="middle">$100</text>
+              <text x="496.3" y="322" text-anchor="middle">$1,000</text>
+              <text x="762.1" y="322" text-anchor="middle">$10,000</text>
+              <text x="870" y="322" text-anchor="middle">$25,000</text>
+            </g>
+            <!-- Row 1: Marketplace freelancers $25-$1,800 : x(25)=70, x(1800)=568.7 -->
+            <g>
+              <text x="70" y="34" font-family="Archivo, sans-serif" font-size="13.5" font-weight="600" fill="var(--ink)">Marketplace freelancers (Upwork, Fiverr)</text>
+              <rect x="70" y="42" width="498.7" height="22" fill="var(--bar-c)" />
+              <text x="578" y="58" font-family="Archivo Mono, monospace" font-size="12" fill="var(--ink-2)">$25 to $1,800</text>
+            </g>
+            <!-- Row 2: Solo video teardown $49-$550 : x(49)=147.6, x(550)=427.8 -->
+            <g>
+              <text x="70" y="96" font-family="Archivo, sans-serif" font-size="13.5" font-weight="600" fill="var(--ink)">Solo video teardown, productized</text>
+              <rect x="147.6" y="104" width="280.2" height="22" fill="var(--bar-a)" />
+              <text x="437" y="120" font-family="Archivo Mono, monospace" font-size="12" fill="var(--ink-2)">$49 to $550</text>
+              <circle cx="363.6" cy="115" r="5" fill="var(--paper)" stroke="var(--bar-a)" stroke-width="2.5" />
+              <text x="363.6" y="140" text-anchor="middle" font-family="Archivo Mono, monospace" font-size="10.5" fill="var(--ink-3)">sweet spot $250 to $299</text>
+            </g>
+            <!-- Row 3: Solo diagnostic $350-$2,997 : x(350)=394.9, x(2997)=612.8 -->
+            <g>
+              <text x="70" y="170" font-family="Archivo, sans-serif" font-size="13.5" font-weight="600" fill="var(--ink)">Solo diagnostic, report plus call</text>
+              <rect x="394.9" y="178" width="217.9" height="22" fill="var(--bar-a)" />
+              <text x="622" y="194" font-family="Archivo Mono, monospace" font-size="12" fill="var(--ink-2)">$350 to $2,997</text>
+            </g>
+            <!-- Row 4: Agency audit-only $1,500-$7,500 : x(1500)=552, x(7500)=729.8 -->
+            <g>
+              <text x="70" y="232" font-family="Archivo, sans-serif" font-size="13.5" font-weight="600" fill="var(--ink)">Agency, audit only</text>
+              <rect x="552" y="240" width="177.8" height="22" fill="var(--bar-b)" />
+              <text x="739" y="256" font-family="Archivo Mono, monospace" font-size="12" fill="var(--ink-2)">$1,500 to $7,500</text>
+            </g>
+            <!-- Row 5: Comprehensive $5,000-$25,000 : x(5000)=682.1, x(25000)=870 -->
+            <g>
+              <text x="70" y="286" font-family="Archivo, sans-serif" font-size="13.5" font-weight="600" fill="var(--ink)">Comprehensive audit and strategy</text>
+              <rect x="682.1" y="294" width="187.9" height="22" fill="var(--bar-b)" />
+              <text x="673" y="310" text-anchor="end" font-family="Archivo Mono, monospace" font-size="12" fill="var(--ink-2)">$5,000 to $25,000</text>
+            </g>
+          </svg>
+          <p class="chart-note">Ranges are the typical published bands from the research summary. UK prices (£250 GA4 audit, £5,000 to £25,000 VCMO) and the sequenceDM range in Canadian dollars sit inside these bands and are listed with their own currencies in the tables below.</p>
+        </div>
+
+        <div class="callout">
+          <span class="k">The dead zone</span>
+          <p>A mid-priced written report, roughly $750 to $1,500, sold cold to local businesses with no implementation path behind it, sits in the worst position in the market: expensive enough to need a sales conversation, cheap enough that the seller cannot afford that conversation, and competing with free audits everywhere. The research found no successful named example of that shape.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">02</span>
+          <h2>Named sellers and real prices</h2>
+          <p>Every price below was published by the seller named. Two prices were verified live on the seller's own page during the research; the rest come from full-page reads or search-index text, and are marked. Vendor claims about results are labelled as vendor claims wherever they appear.</p>
+        </div>
+
+        <h3>Productized solo and one-person services: the closest comparators</h3>
+        <div class="table-scroll stack">
+          <table>
+            <thead><tr><th>Seller / product</th><th>Price</th><th>What is included</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="seller" data-label="Seller">Pages.Report, Landing Page Roast<span class="sub">Solo operator, Luke (Łukasz) Korcz</span></td>
+                <td class="price" data-label="Price">$299</td>
+                <td data-label="Included">15-minute private personalised video, section-by-section fixes across copy, design, positioning and proof. Delivered within 48 hours. 30-day money-back guarantee. No call; async is the product.</td>
+                <td data-label="Source"><a class="src" href="https://www.pages.report/">pages.report</a><span class="badge badge-live">Verified live</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">SEO Roast<span class="sub">Solo operator; price stated in his own comparison guide, and he discloses he runs the service</span></td>
+                <td class="price" data-label="Price">$250 / $550</td>
+                <td data-label="Included">Public / private recorded video teardown, 5 to 10 prioritized moves: crawl blockers, Core Web Vitals, keyword gaps against competitors, pages to build. 3 to 5 business days.</td>
+                <td data-label="Source"><a class="src" href="https://il.ly/blog/seo-audit-service">il.ly guide</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">MarginFix, productized marketing audit<span class="sub">Three tiers for small and mid-sized businesses</span></td>
+                <td class="price" data-label="Price">$1,450 / $2,950 / $5,950</td>
+                <td data-label="Included">Diagnostic ($1,450, 5 auditor hours, documented findings, no readout), Strategic ($2,950, 10 hours, full report plus live executive readout), Audit+Sprint ($5,950, 14 hours). 5 to 7 working days, senior auditor, findings guarantee or refund. 100% of the fee credits toward implementation booked within 30 days.</td>
+                <td data-label="Source"><a class="src" href="https://marginfix.ai/pricing/">marginfix.ai</a><span class="badge badge-live">Verified live</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Perfectly Made Marketing, Meta Ads and Funnel Audit<span class="sub">Solo, niche: coaches</span></td>
+                <td class="price" data-label="Price">$397</td>
+                <td data-label="Included">Ads and funnel review, checklist, prioritized action list, 45-minute Zoom review call. Delivered within 3 business days of intake and access.</td>
+                <td data-label="Source"><a class="src" href="https://offer.perfectlymademarketing.com/custom-audit.html">perfectlymademarketing.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Enoch Growth, Ecommerce Audit<span class="sub">Solo coach</span></td>
+                <td class="price" data-label="Price">$350</td>
+                <td data-label="Included">Complete store and funnel teardown, GA4 and tracking review, prioritized roadmap, 60-minute walkthrough call, about 2 weeks. The stated next step is a $950/month retainer.</td>
+                <td data-label="Source"><a class="src" href="https://enochgrowth.lovable.app/">enochgrowth</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Jeremiah Krakowski, Offer Copy and Funnel Audit</td>
+                <td class="price" data-label="Price">$2,997</td>
+                <td data-label="Included">Two walkthrough videos plus transcripts plus a written action-step report. 2 to 3 weeks.</td>
+                <td data-label="Source"><a class="src" href="https://www.jeremiahkrakowski.com/offer-copy-and-funnel-audit">jeremiahkrakowski.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Conversion Uplift, GA4 Audit<span class="sub">UK solo / small firm</span></td>
+                <td class="price" data-label="Price">£250 / £450 / £1,500+</td>
+                <td data-label="Included">GA4 audit £250 plus VAT (186 checks, signed report, ranked fixes, 5 working days), GA4 plus GTM £450, Senior Diagnostic from £1,500. Implementation is quoted fixed-price after the audit.</td>
+                <td data-label="Source"><a class="src" href="https://conversion-uplift.co.uk/ga4-audit/">conversion-uplift.co.uk</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Convertica<span class="sub">The audit is the funnel; the money is in the rebuild</span></td>
+                <td class="price" data-label="Price">Free / $27 / $497 / $1,997</td>
+                <td data-label="Included">Audit free, full report $27, one-page rebuild $497, full-site rebuild $1,997. They build every fix themselves.</td>
+                <td data-label="Source"><a class="src" href="https://convertica.org/conversion-rate-optimization-services/">convertica.org</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">AuditIndie</td>
+                <td class="price" data-label="Price">$49</td>
+                <td data-label="Included">Human-authored teardown of your own site, full annotated report, scored against a teardown library. Library membership $9/month or $79 lifetime.</td>
+                <td data-label="Source"><a class="src" href="https://auditindie.com/">auditindie.com</a><span class="badge badge-warn">Waitlist, not yet open</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Teardown Shop<span class="sub">Launch post by its own founder</span></td>
+                <td class="price" data-label="Price">$49 / $199 / $499 mo</td>
+                <td data-label="Included">Tripwire teardown in 24 hours, deep teardown in 48 hours, $499/month retainer. Panel-style section scoring, issues ranked by impact, full above-the-fold rewrite.</td>
+                <td data-label="Source"><a class="src" href="https://dev.to/northloopworks/i-productized-landing-page-teardowns-launching-today-with-0-customers-here-is-a-sample-teardown-4p2c">dev.to launch post</a><span class="badge badge-bad">0 customers at launch</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">ProspectAudits<span class="sub">White-label audits sold to agencies, not to businesses</span></td>
+                <td class="price" data-label="Price">$49 / $179 / $99 mo</td>
+                <td data-label="Included">12-point Google Business Profile audit, competitor table, review analysis, prioritized fixes, branded PDF or HTML in 24 hours. The buyer is an agency using the audit as a sales tool.</td>
+                <td data-label="Source"><a class="src" href="https://prospectaudits.com/">prospectaudits.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Agencies</h3>
+        <div class="table-scroll stack">
+          <table>
+            <thead><tr><th>Seller / product</th><th>Price</th><th>What is included</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="seller" data-label="Seller">WebFX, SEO Audit</td>
+                <td class="price" data-label="Price">From $8,600</td>
+                <td data-label="Included">On-page, technical, off-page and AI-search audit, up to 70 pages, 45 days, competitor scorecard for up to 3 competitors, backlink and keyword research, up to 2.5 hours of implementation training. Link audit adds $1,200. The same page says 1 in 10 businesses qualify for a free audit.</td>
+                <td data-label="Source"><a class="src" href="https://www.webfx.com/seo/services/seo-audits/">webfx.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Persuasion Experience (PX), CRO Audit</td>
+                <td class="price" data-label="Price">$3,997</td>
+                <td data-label="Included">35+ page audit, Loom videos, action plan, 3 months of split-test recommendations, mockups and wireframes, 3 weeks, 30-minute follow-up chat. List price $4,997. A tier with an insights survey runs $4,997 (list $6,997).</td>
+                <td data-label="Source"><a class="src" href="https://www.persuasionexperience.com/services/cro-audit">persuasionexperience.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Goodspeed Studio, Tune-Up</td>
+                <td class="price" data-label="Price">$5,000</td>
+                <td data-label="Included">Audit and the fixes themselves, done in 2 weeks. The audit is never sold alone here.</td>
+                <td data-label="Source"><a class="src" href="https://goodspeed.studio/product/tune-up">goodspeed.studio</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">1Digital Agency, Local SEO Audit</td>
+                <td class="price" data-label="Price">$2,500 to $15,000</td>
+                <td data-label="Included">Audit-only: Google Business Profile, citations, on-page, schema, technical, reviews, competitor benchmarking, 30/60/90-day roadmap. 2 to 3 weeks, 4 to 6 for multi-location. Audit plus implementation billed from $185/hour.</td>
+                <td data-label="Source"><a class="src" href="https://www.1digitalagency.com/local-seo-audit/">1digitalagency.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">sequenceDM, Marketing Audit<span class="sub">Consultant / agency, Canada</span></td>
+                <td class="price" data-label="Price">$7,500 to $10,000 CAD</td>
+                <td data-label="Included">Comprehensive marketing audit plus an initial strategic plan, aimed at small and mid-sized businesses.</td>
+                <td data-label="Source"><a class="src" href="https://www.sequencedm.com/blog/marketing-audits-marketing-strategy">sequencedm.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">VCMO, Marketing Audit<span class="sub">UK; the pure standalone exception at the top end</span></td>
+                <td class="price" data-label="Price">£5,000 to £25,000</td>
+                <td data-label="Included">Modular diagnostic by Chartered marketers, plus VAT. Explicitly independent: "no obligation to proceed beyond the audit." This is the model that works standalone, because mid-market buyers pay for independence from the implementer.</td>
+                <td data-label="Source"><a class="src" href="https://www.vcmo.uk/fractional-marketing-services/content-strategy-audit">vcmo.uk</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Click Intelligence, CRO audit</td>
+                <td class="price" data-label="Price">From £800 / page</td>
+                <td data-label="Included">Priced per landing page, with a full itemised breakdown of scope before work starts.</td>
+                <td data-label="Source"><a class="src" href="https://www.clickintelligence.com/seo/cro/services/">clickintelligence.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Marketplace freelancers (Upwork Project Catalog)</h3>
+        <p>Densely populated at $50 to $500, which proves supply. Upwork does not publish per-listing sales volume in the pages fetched, so demand per listing could not be verified. A sample of the range:</p>
+        <div class="table-scroll stack">
+          <table>
+            <thead><tr><th>Listing</th><th>Price</th><th>What is included</th></tr></thead>
+            <tbody>
+              <tr><td class="seller" data-label="Listing">Landing Page Roast Audit (Tyrone)</td><td class="price" data-label="Price">$50</td><td data-label="Included">15-minute video teardown of a homepage.</td></tr>
+              <tr><td class="seller" data-label="Listing">Google Business Profile audit</td><td class="price" data-label="Price">$25 / $50 / $80</td><td data-label="Included">Local score, review insights, competitor comparison, PDF report and action plan, 1 to 3 days.</td></tr>
+              <tr><td class="seller" data-label="Listing">SaaS landing page audit (Olga G.)</td><td class="price" data-label="Price">$50 / $100 / $150</td><td data-label="Included">1 to 2 pages, messaging, hierarchy and flow breakdown, PDF or Figma, 1 to 3 days.</td></tr>
+              <tr><td class="seller" data-label="Listing">Small-business website and SEO audit (Adriaan)</td><td class="price" data-label="Price">$79 to $499</td><td data-label="Included">Every page checked against on-page and local SEO, delivered as a ranked, prioritized document.</td></tr>
+              <tr><td class="seller" data-label="Listing">Funnel audit and growth plan (Ada)</td><td class="price" data-label="Price">$295</td><td data-label="Included">Discovery call, Loom video, report and roadmap, templates, copy and automation guide.</td></tr>
+              <tr><td class="seller" data-label="Listing">Priority Website and Landing Page Audit (Elijah)</td><td class="price" data-label="Price">$450</td><td data-label="Included">Crawl plus review, findings and prioritised fixes.</td></tr>
+              <tr><td class="seller" data-label="Listing">Technical SEO audit plus 1-hour consultation (Deborah A.)</td><td class="price" data-label="Price">$600 / $1,200 / $1,800</td><td data-label="Included">5 to 15 days, 5 to 15 keywords, 3 to 7 competitors, action plan from the Standard tier up.</td></tr>
+              <tr><td class="seller" data-label="Listing">Expert UX/UI audit</td><td class="price" data-label="Price">$360 / $1,000 / $1,600</td><td data-label="Included">2, 8 or 16 pages; page-by-page heuristic PDF; up to 1-hour initial consult and up to 1-hour debrief.</td></tr>
+              <tr><td class="seller" data-label="Listing">Website / SaaS Teardown</td><td class="price" data-label="Price">$1,000</td><td data-label="Included">Teardown framed around UX and conversion, with a CX audit and review/sentiment analysis offer.</td></tr>
+              <tr><td class="seller" data-label="Listing">Full digital marketing audit (agency-style)</td><td class="price" data-label="Price">$2,000 / $3,000 / $5,000</td><td data-label="Included">10, 20 or 30 days; 240, 300 or 600 live consultation minutes.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="hedge">Aggregated guides corroborate the marketplace picture: freelancer SEO audits run $300 to $2,500 ($75 to $200/hour), content audits $300 to $800 freelance against $750 to $2,500 at a boutique agency, and small-business SEO audits $200 to $500 freelance against $1,000 to $3,000 agency. Fiverr data is thinner: a third-party 2026 guide, citing a GigBuyerGuide check dated September 29, 2026, puts the median starting price among well-reviewed SEO gigs at $40, with the middle half between $20 and $90. Treat that as order-of-magnitude only.</p>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">03</span>
+          <h2>What you get at each price</h2>
+          <p>One pattern stands out: report length does not scale with price. Scope and human time do. The $299 product is a 15-minute video; the $1,450 product is deliberately short on deliverables and sells the guarantee and the prioritisation instead.</p>
+        </div>
+        <div class="table-scroll stack">
+          <table>
+            <thead><tr><th>Tier</th><th>Format</th><th>Scope</th><th>Turnaround</th><th>Call?</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="price" data-label="Tier">Under $250</td>
+                <td data-label="Format">Recorded video, or an automated / light report</td>
+                <td data-label="Scope">One page (homepage or landing page), 15 to 20 minutes of video, or a scored checklist such as a 12-point Google Business Profile audit</td>
+                <td data-label="Turnaround">1 to 3 days (24 hours at the $49 tiers)</td>
+                <td data-label="Call?">No. The video is the deliverable.</td>
+              </tr>
+              <tr>
+                <td class="price" data-label="Tier">$250 to $1,000</td>
+                <td data-label="Format">Video teardown plus a written prioritized list, or a short written report plus a call</td>
+                <td data-label="Scope">Video still covers one page at $250 to $299; multi-page or whole small site from about $450 to $600. Fixes ranked by impact and effort is the standard promise in this band</td>
+                <td data-label="Turnaround">48 hours (Pages.Report) to 3 to 5 business days; about 2 weeks at Enoch Growth</td>
+                <td data-label="Call?">Split. Video products: no call, by design. Report products: yes, 30 to 60 minutes.</td>
+              </tr>
+              <tr>
+                <td class="price" data-label="Tier">$1,000 to $5,000</td>
+                <td data-label="Format">Written report or roadmap plus a live readout</td>
+                <td data-label="Scope">First tier where competitor comparison, funnel or channel scope, and a phased roadmap are standard. Auditor time is stated in hours: MarginFix runs 5, 10 and 14 hours across its tiers; PX adds mockups, wireframes and 3 months of test recommendations</td>
+                <td data-label="Turnaround">5 to 7 working days (MarginFix) to 3 weeks (PX, Krakowski)</td>
+                <td data-label="Call?">Yes, almost always at $2,950 and up. At $1,450 MarginFix explicitly withholds it; the call is an upsell boundary.</td>
+              </tr>
+              <tr>
+                <td class="price" data-label="Tier">Above $5,000</td>
+                <td data-label="Format">Team-produced audit plus strategy</td>
+                <td data-label="Scope">Up to 70 pages (WebFX), multi-location, log-file, backlink and content analysis, implementation training</td>
+                <td data-label="Turnaround">45 days (WebFX); 3 to 6 weeks typical</td>
+                <td data-label="Call?">Yes, plus training and support hours. At this level the fixes are often included, as in Goodspeed's $5,000 Tune-Up.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">04</span>
+          <h2>Three sales models, and which one wins</h2>
+          <p>By offer volume, free wins. By practitioner-reported economics, paid and credited wins. Pure standalone is real but narrow, and it only works at the two extremes of the price ladder.</p>
+        </div>
+        <div class="models">
+          <div class="model">
+            <span class="rank">Model 1 · Most common offer</span>
+            <h3>Free audit as lead magnet</h3>
+            <p class="who">Indigo · WealthReach · Convertica · Disruptive Advertising · Go With Arch · WebFX (for 1 in 10)</p>
+            <p>By far the most common offer on agency and advisor-marketing sites. Usually automated or light-touch: breadth without the "how."</p>
+            <ul>
+              <li>PPC Hero's distinction: a sales-process audit "does not recommend the how, it simply states what needs to be done." A paid audit "goes into significant detail and recommends the how."</li>
+              <li>Stackmatix, bluntly: agencies that offer free audits "are typically running a sales process, not a genuine diagnostic."</li>
+              <li>Go With Arch gives the written audit away with a 45-minute walkthrough: "You keep the written audit whether or not you hire us."</li>
+            </ul>
+          </div>
+          <div class="model">
+            <span class="rank">Model 2 · Strongest economics</span>
+            <h3>Paid diagnostic, fee credited</h3>
+            <p class="who">MarginFix · MyWebAudit · Wayfront cases · Agency Mavericks</p>
+            <p>The model practitioners who write about their numbers actually recommend. The fee qualifies the buyer and de-risks the bigger engagement.</p>
+            <ul>
+              <li>MarginFix: 100% of the audit fee becomes a credit toward implementation booked within 30 days.</li>
+              <li>Wayfront: a $2,000 growth strategy audit converted 35% of buyers into services worth $20,000+. A $2,500 funnel audit led most buyers into engagements of $25,000+.</li>
+              <li>Agency Mavericks prices discovery at roughly 10 to 20% of the overall project price.</li>
+            </ul>
+          </div>
+          <div class="model">
+            <span class="rank">Model 3 · Real but narrow</span>
+            <h3>Pure standalone</h3>
+            <p class="who">Pages.Report · SEO Roast · VCMO · sequenceDM</p>
+            <p>Exists only at the extremes: very cheap and fast, where volume and speed make the unit economics work, or very expensive and independent, bought by mid-market buyers who specifically want no implementer attached.</p>
+            <ul>
+              <li>Cheap end: $49 to $299 video teardowns, no call, 48-hour delivery.</li>
+              <li>Expensive end: VCMO at £5,000 to £25,000 sells independence itself as the product.</li>
+              <li>The middle of this model is where the dead zone sits.</li>
+            </ul>
+          </div>
+        </div>
+
+        <blockquote>"The audit isn't the business. It's the door. Most clients who complete the audit move into engagements worth $25,000 or more."</blockquote>
+        <p class="attrib">Mike Gammarino, Blueprint Partners, on his $2,500 sales funnel audit, via Wayfront's productized consulting research.</p>
+
+        <div class="callout">
+          <span class="k">The counterargument, from a successful agency</span>
+          <p>PPC Hero argues that unless you are one of the best in the world, a solo shop already covering its living expenses, or drowning in tire-kickers, you should not charge for audits during the sales process at all: most agencies do not, so charging makes you the outlier, and even offering the fee back as a credit stacks the deck against you. Charging does weed out free-consulting seekers, at the cost of also weeding out some good prospects.</p>
+        </div>
+
+        <p class="hedge"><strong>A number to not rely on:</strong> MarketingEye, an agency blog showing no methodology, sample or source, claims free audits convert at around 10 to 15 percent and paid-audit buyers close at 30 percent or higher. These are the only head-to-head percentages found anywhere in this research, and they are unsourced vendor content. They are recorded here so the gap is visible, not as evidence.</p>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">05</span>
+          <h2>The financial advisor angle</h2>
+          <p>Advisors do pay for marketing. What they pay for is done-for-you systems and retainers, not audits. Every advisor-specific audit found in this research is a free lead magnet.</p>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat">
+            <div class="big">$0</div>
+            <div class="cap">Price of both advisor-specific audits found (Indigo and WealthReach). No named, priced, standalone paid audit sold to advisors was found.</div>
+          </div>
+          <div class="stat">
+            <div class="big">1 to 2%</div>
+            <div class="cap">Share of revenue the average advisor spends on marketing in hard dollars, per Kitces research cited by Twenty Over Ten.</div>
+          </div>
+          <div class="stat">
+            <div class="big">$5k to $10k</div>
+            <div class="cap">Total annual hard-dollar marketing budget of a $500,000-revenue advisory firm, on that same Kitces figure.</div>
+          </div>
+        </div>
+
+        <h3>What advisors actually buy</h3>
+        <div class="table-scroll stack">
+          <table>
+            <thead><tr><th>Seller / product</th><th>Price</th><th>Notes</th><th>Source</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="seller" data-label="Seller">Indigo Marketing Agency, website audit<span class="sub">Advisor-only agency</span></td>
+                <td class="price" data-label="Price">Free</td>
+                <td data-label="Notes">Comprehensive video report within 10 business days, covering every page and link, CTA placement, content and design. The FAQ steers anyone who wants the fixes done to the paid Website Copywriting Package.</td>
+                <td data-label="Source"><a class="src" href="https://indigomarketingagency.com/free-website-audit/">indigomarketingagency.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">WealthReach, website audit<span class="sub">Advisor-only</span></td>
+                <td class="price" data-label="Price">Free</td>
+                <td data-label="Notes">Graded A+ to F across 8 sections, including competitive position against nearby advisors and a prioritized action plan, with a walkthrough.</td>
+                <td data-label="Source"><a class="src" href="https://wealthreach.ai/lp/website-is-broken">wealthreach.ai</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Indigo, Total Marketing Package</td>
+                <td class="price" data-label="Price">$3,500 + $795/mo</td>
+                <td data-label="Notes">$3,500 to build the foundation, including the SEO package and the website audit, then $795/month. $500 off the upfront fee if the site is already optimized.</td>
+                <td data-label="Source"><a class="src" href="https://indigomarketingagency.com/wp-content/uploads/2021/12/Total-Marketing-Package-2022-1.pdf">Indigo package PDF</a><span class="badge badge-warn">Dated 2022</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Snappy Kraken, Freedom360</td>
+                <td class="price" data-label="Price">$750/mo + $1,499</td>
+                <td data-label="Notes">Done-for-you marketing for advisors: $750/month plus a $1,499 one-time setup ($499 for the first 125). A secondary summary put core Snappy membership at $245/month plus $489 setup.</td>
+                <td data-label="Source"><a class="src" href="https://snappykraken.com/blog/snappy-kraken-launches-freedom360-premium-done-for-you-marketing-solution-for-financial-advisors?hs_amp=true">snappykraken.com</a><span class="badge badge-warn">2023 launch release</span></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Twenty Over Ten, website platform</td>
+                <td class="price" data-label="Price">$95/mo</td>
+                <td data-label="Notes">Platform at $95/month (list $109), Basic Design $1,200 one-time, Tailored Design $2,400 one-time.</td>
+                <td data-label="Source"><a class="src" href="https://mutualadvisors.twentyoverten.com/get-started/pricing">twentyoverten.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Advisor / CPA AEO agency retainers<span class="sub">OpenLens benchmark tiers</span></td>
+                <td class="price" data-label="Price">$2,000 to $7,500/mo</td>
+                <td data-label="Notes">Monitoring $2,000 to $3,500/month, active optimization $3,500 to $5,500, full service $5,500 to $7,500. These retainers include profile audits of NAPFA, XYPN and BrokerCheck listings; they are not standalone audits.</td>
+                <td data-label="Source"><a class="src" href="https://openlens.com/blog/en/aeo-services-financial-agencies-2026">openlens.com</a></td>
+              </tr>
+              <tr>
+                <td class="seller" data-label="Seller">Fractional CMO for advisory firms<span class="sub">Select Advisors Institute</span></td>
+                <td class="price" data-label="Price">$4,000 to $15,000+/mo</td>
+                <td data-label="Notes">Or $150 to $400+ per hour. The top of what advisory firms pay for marketing leadership.</td>
+                <td data-label="Source"><a class="src" href="https://selectadvisorsinstitute.squarespace.com/our-perspective/fractional-vs-in-house-cmo-financial-advisors-sai">selectadvisorsinstitute</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <span class="k">What this means for pricing to advisors</span>
+          <p>A $1,450 to $2,950 standalone audit would consume roughly 15 to 59 percent of a small advisory firm's entire annual hard-dollar marketing budget, against competitors giving the audit away and monetising a $750 to $795/month package. A $250 to $550 teardown, or a diagnostic credited toward implementation, fits the observed budget shape far better. This is inference from the prices and budgets above, not a surveyed fact.</p>
+          <p>One supporting detail for what a teardown should cover: Kitces 2026 figures, via SmartAsset, put online advisor directory listings at $0.28 of acquisition cost per $1 of new revenue, the lowest of 26 tactics measured, and SEO at $0.45. Listings, reviews and SEO are where advisor marketing return actually is, which supports the content of a teardown aimed at advisors even though it says nothing about paying for one.</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">06</span>
+          <h2>Willingness to pay: what the evidence actually shows</h2>
+          <p>Small businesses pay for audits in exactly three situations visible in this research: cheap and instant, as a de-risked first step toward a bigger engagement they already intend to buy, or as a genuinely independent second opinion at agency prices.</p>
+        </div>
+
+        <h3>First-hand seller accounts</h3>
+        <ul class="plain">
+          <li><strong>Standalone can work, then stops being standalone.</strong> A bootstrapped founder launched a flat $1,500 productized audit for ecommerce analytics, got 6 clients within 30 days, and reached $8,000/month within 90 days, from the audit converting into recurring work; audit clients later became subscribers to his SaaS. Single anecdote, self-reported, no independent verification. <a href="https://dev.to/insightlab/the-productized-service-pivot-5ff4">dev.to account</a></li>
+          <li><strong>Standalone at launch can also be zero.</strong> Teardown Shop's founder states plainly in his launch post: 0 customers, 0 revenue on launch day, at $49 / $199 / $499 pricing. A priced page is not evidence of sales. The same caution applies to AuditIndie, whose $49 audit is still on a waitlist. <a href="https://dev.to/northloopworks/i-productized-landing-page-teardowns-launching-today-with-0-customers-here-is-a-sample-teardown-4p2c">Launch post</a></li>
+          <li><strong>Buyers shelve audits.</strong> Sun BPO's founder: "I have watched owners pay $1,800 for an audit, file the PDF, and change nothing. An audit nobody implements is just a PDF." His firm folds the audit into month 1 of a retainer instead of billing it separately. His buy rule: pay $500 to $1,500 for a human-reviewed audit on a small site only when you have a specific question and someone ready to act within 60 days, and skip it if you are hiring an agency anyway, because you would pay twice. <a href="https://news.sunbposolutions.com/paid-seo-audit-worth-it-small-business">Sun BPO</a></li>
+          <li><strong>The discovery fee almost always leads somewhere.</strong> MyWebAudit's agency guide prices discovery at $1,500 to $2,500, applies the fee as a credit toward the website project, and reports that in five years, of dozens of paid discovery sessions, only one did not lead to more paid work. Single-agency self-report; treat as anecdotal but specific. <a href="https://www.mywebaudit.com/blog/agency-guide-executing-discovery">MyWebAudit</a></li>
+          <li><strong>Independence is the strongest standalone pitch.</strong> X8 Agency's framing: a free audit is incentivized to serve the seller's next invoice, and its typical finding is something urgent and fixable by them. A paid fixed-fee diagnostic can honestly find "not much." <a href="https://www.x8agency.com/insights/is-a-diagnostic-before-committing-worth-it.html">X8 Agency</a></li>
+          <li><strong>Paid-for-thinking is a step, not a business.</strong> Alt Agency's counter-take: paid discovery at the commonly heard $1,500 to $3,000 is "a bandaid" if the execution behind it is still fully custom. <a href="https://altagency.com/dont-do-paid-discover/">Alt Agency</a></li>
+        </ul>
+
+        <h3>Survey backdrop</h3>
+        <p>No survey was found that asks small businesses directly whether they would pay for an audit alone. That specific willingness-to-pay evidence does not appear to exist in published form. The nearest context: the Ahrefs provider survey, as cited in pricing guides, puts the most common SEO project band at $2,501 to $5,000, average retainers at $1,348/month for freelancers against $3,209/month for agencies, and the most common hourly band at $75 to $100. Clutch survey work found 52 percent of small businesses invest in SEO. None of these isolate audit-only spend.</p>
+
+        <h3>A hybrid structure worth knowing</h3>
+        <p>One practitioner proposal structure from a detailed audit-proposal write-up: Option A, audit only, for genuine DIY implementers; Option B, audit plus Phase 1 remediation, priced 40 to 60 percent above A, which "most clients take"; Option C, full remediation with the audit included free. The author's rule: the audit is never free; sell it at a deliberately low fixed price, not at zero. <a href="https://medium.com/@zxpolo418_58834/how-to-write-a-website-audit-proposal-that-gets-signed-8c897e39f8b1">Medium, audit proposal guide</a></p>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">07</span>
+          <h2>Open questions: what could not be verified</h2>
+          <p>Stated plainly, because the gaps are part of the answer.</p>
+        </div>
+        <ul class="plain">
+          <li><strong>Sales volume for any named teardown product.</strong> Pages.Report, SEO Roast and MarginFix publish prices and testimonials, and MarginFix claims 74 audits delivered and $58,000 in median findings. All of that is vendor-stated and none of it independently verified. No revenue figures for any standalone teardown seller were found.</li>
+          <li><strong>Head-to-head conversion data</strong> for free versus paid versus credited audits, from any independent source. The only percentages found are the unsourced MarketingEye claims flagged in section 4.</li>
+          <li><strong>Any paid standalone audit aimed specifically at financial advisors.</strong> Targeted searches surfaced only the free Indigo and WealthReach audits and paid advisor retainers. The absence may reflect search coverage rather than non-existence, but the direction is consistent across every search run.</li>
+          <li><strong>Upwork and Fiverr transaction volume</strong> for audit listings. Prices are public; completed-order counts per listing were not in the fetched pages, so proven supply does not prove proven demand per listing.</li>
+          <li><strong>AchyutamWeb's exact audit price.</strong> The fetched page text gave a site-wide price range of $79 to $5,549 CAD without isolating the audit's own price, so no figure is quoted for it here.</li>
+        </ul>
+      </section>
+
+      <section>
+        <div class="sec-head">
+          <span class="num">08</span>
+          <h2>Sources</h2>
+          <p>Checked October 20, 2026. Pages.Report and MarginFix were verified live on the sellers' own pages in the research browser; the rest are full-page reads or search-index text, as marked beside each entry above.</p>
+        </div>
+        <ul class="sources">
+          <li><a href="https://www.pages.report/">Pages.Report</a>, $299 landing page roast</li>
+          <li><a href="https://marginfix.ai/pricing/">MarginFix pricing</a>, $1,450 / $2,950 / $5,950</li>
+          <li><a href="https://www.persuasionexperience.com/services/cro-audit">Persuasion Experience CRO audit</a>, $3,997</li>
+          <li><a href="https://www.webfx.com/seo/services/seo-audits/">WebFX SEO audits</a>, from $8,600</li>
+          <li><a href="https://il.ly/blog/seo-audit-service">SEO audit service guide (il.ly)</a>, SEO Roast $250 / $550 and freelancer ranges</li>
+          <li><a href="https://indigomarketingagency.com/free-website-audit/">Indigo free website audit</a> for advisors</li>
+          <li><a href="https://wealthreach.ai/lp/website-is-broken">WealthReach free website audit</a> for advisors</li>
+          <li><a href="https://wayfront.com/blog/productized-consulting">Wayfront, productized consulting</a>, gateway audit cases</li>
+          <li><a href="https://www.mywebaudit.com/blog/agency-guide-executing-discovery">MyWebAudit, agency discovery guide</a>, $1,500 to $2,500 credited</li>
+          <li><a href="https://ppchero.com/when-you-should-charge-for-ppc-audits-aka-how-to-land-a-new-client/">PPC Hero, when to charge for audits</a>, the counterargument</li>
+          <li><a href="https://news.sunbposolutions.com/paid-seo-audit-worth-it-small-business">Sun BPO, is a paid SEO audit worth it</a>, buyer-side account</li>
+          <li><a href="https://convertica.org/conversion-rate-optimization-services/">Convertica CRO services</a>, free audit, $27 report, rebuild pricing</li>
+          <li><a href="https://auditindie.com/">AuditIndie</a>, $49 teardown, waitlist</li>
+          <li><a href="https://dev.to/northloopworks/i-productized-landing-page-teardowns-launching-today-with-0-customers-here-is-a-sample-teardown-4p2c">Teardown Shop launch post</a>, 0 customers stated</li>
+          <li><a href="https://dev.to/insightlab/the-productized-service-pivot-5ff4">Productized service pivot</a>, $1,500 audit anecdote</li>
+          <li><a href="https://goodspeed.studio/product/tune-up">Goodspeed Tune-Up</a>, $5,000 audit plus fixes</li>
+          <li><a href="https://conversion-uplift.co.uk/ga4-audit/">Conversion Uplift GA4 audit</a>, £250 and up</li>
+          <li><a href="https://www.clickintelligence.com/seo/cro/services/">Click Intelligence CRO</a>, from £800 per page</li>
+          <li><a href="https://www.convert.com/blog/a-b-testing/how-much-should-cro-agencies-charge-clients/">Convert.com, CRO agency pricing</a>, $2,500 / $3,500 / $4,500</li>
+          <li><a href="https://stackmatix.com/blog/ecommerce-marketing-agency-pricing">Stackmatix, agency pricing</a>, audit ranges and the free-audit warning</li>
+          <li><a href="https://www.sequencedm.com/blog/marketing-audits-marketing-strategy">sequenceDM marketing audits</a>, $7,500 to $10,000 CAD</li>
+          <li><a href="https://strategicpete.com/blog/marketing-consultant-rates/">Strategic Pete, consultant rates</a>, audit projects $1,500 to $5,000</li>
+          <li><a href="https://www.vcmo.uk/fractional-marketing-services/content-strategy-audit">VCMO marketing audit</a>, £5,000 to £25,000, independent</li>
+          <li><a href="https://www.1digitalagency.com/local-seo-audit/">1Digital local SEO audit</a>, $2,500 to $15,000</li>
+          <li><a href="https://offer.perfectlymademarketing.com/custom-audit.html">Perfectly Made audit</a>, $397 with call</li>
+          <li><a href="https://enochgrowth.lovable.app/">Enoch Growth audit</a>, $350 with walkthrough</li>
+          <li><a href="https://www.jeremiahkrakowski.com/offer-copy-and-funnel-audit">Jeremiah Krakowski audit</a>, $2,997</li>
+          <li><a href="https://prospectaudits.com/">ProspectAudits</a>, white-label audits for agencies</li>
+          <li><a href="https://www.marketingeye.com/blog/free-vs-paid-marketing-audits-which-option-delivers-the-best-roi.html">MarketingEye, free vs paid audits</a>, unsourced conversion claims, flagged</li>
+          <li><a href="https://www.x8agency.com/insights/is-a-diagnostic-before-committing-worth-it.html">X8 Agency, diagnostic framing</a></li>
+          <li><a href="https://www.agencymavericks.com/defining-paid-discovery-and-how-it-works/">Agency Mavericks, paid discovery</a>, 10 to 20 percent rule</li>
+          <li><a href="https://altagency.com/dont-do-paid-discover/">Alt Agency, paid discovery counter-take</a></li>
+          <li><a href="https://medium.com/@zxpolo418_58834/how-to-write-a-website-audit-proposal-that-gets-signed-8c897e39f8b1">Audit proposal structure</a>, three-option hybrid</li>
+          <li><a href="https://gowitharch.com/">Go With Arch</a>, free audit with every engagement</li>
+          <li><a href="https://clutch.co/profile/disruptive-advertising">Disruptive Advertising on Clutch</a>, free audit offer, $5,000+ minimum project</li>
+          <li><a href="https://indigomarketingagency.com/wp-content/uploads/2021/12/Total-Marketing-Package-2022-1.pdf">Indigo Total Marketing Package (2022 PDF)</a>, $3,500 plus $795/month</li>
+          <li><a href="https://mutualadvisors.twentyoverten.com/get-started/pricing">Twenty Over Ten pricing</a>, $95/month platform</li>
+          <li><a href="https://blog.twentyoverten.com/financial-advisor-digital-marketing-budget-how-to-allocate-and-manage-expenses/">Twenty Over Ten, advisor marketing budgets</a>, Kitces 1 to 2 percent figure</li>
+          <li><a href="https://smartasset.com/advisor-resources/financial-advisor-marketing-revenue-acquisition-cost">SmartAsset, Kitces 2026 acquisition costs</a></li>
+          <li><a href="https://snappykraken.com/blog/snappy-kraken-launches-freedom360-premium-done-for-you-marketing-solution-for-financial-advisors?hs_amp=true">Snappy Kraken Freedom360 launch</a>, $750/month plus setup</li>
+          <li><a href="https://openlens.com/blog/en/aeo-services-financial-agencies-2026">OpenLens, AEO for financial agencies</a>, retainer tiers</li>
+          <li><a href="https://selectadvisorsinstitute.squarespace.com/our-perspective/fractional-vs-in-house-cmo-financial-advisors-sai">Select Advisors Institute, fractional CMO</a></li>
+          <li><a href="https://www.pro-reviewer.cyou/2026/10/hire-seo-expert-on-fiverr-2026.html">Fiverr SEO pricing guide</a>, third-party, thin</li>
+          <li><a href="https://pushleads.com/how-much-does-an-seo-content-audit-cost-2024/">PushLeads, content audit costs</a></li>
+          <li><a href="https://www.grigora.co/blog/website-audit-costs/">Grigora, website audit costs</a></li>
+          <li><a href="https://clutch.co/report/business-guide-seo-services-projects-cost-providers">Clutch, SEO services guide</a>, 52 percent invest in SEO</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Compiled October 20, 2026 from sellers' own published pages and practitioner accounts, linked throughout. Prices are the sellers' listed prices on that date and will drift. Claims about conversion rates, findings and outcomes are the sellers' own and are labelled as such wherever they appear; nothing in this briefing treats a vendor claim as independent data.</p>
+      </footer>
+
+    </div>
+  </body>
+</html>

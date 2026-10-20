@@ -8,3 +8,4 @@
 6. **Fit the client.** Every recommendation must be something this client can actually do with the people and rules they have.
 7. **Fair, not harsh.** Say what's working first. Where friction is probably compliance or a franchise rule, say so.
 8. **Voice.** Peer to peer, plain, complete sentences. Write to the person ("you"), not about them. Never salesy.
+9. **No pricing or sales CTA** in any client-facing teardown or cover doc. Teardowns are portfolio and door-opener work.

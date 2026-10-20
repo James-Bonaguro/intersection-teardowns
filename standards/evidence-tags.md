@@ -9,4 +9,6 @@
 | `INFERRED` | Reasoned from tagged facts. Name what it rests on. | Only if the reasoning is shown |
 | `UNKNOWN` | Not visible from outside. | No. Goes in Limits. |
 
+A vendor's published list price is `OBSERVED (published)`: evidence of what they ask, never `RECHECKED` and never proof of a sale.
+
 Every fact in the appendix has: number, description, URL, tag, date.
