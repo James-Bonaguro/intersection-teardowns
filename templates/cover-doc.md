@@ -84,4 +84,4 @@ If you are reading a teardown of mine, the document in your hands is the method,
 > **The method, in one line:** Public sources only. Every claim sourced and dated. Interpretations and unknowns labeled as what they are.
 
 James Bonaguro · Intersection Strategies
-info@intersectionstrategies.co · 708-420-5462
+james@intersectionstrategies.co · 708-420-5462

@@ -13,4 +13,4 @@ How it's made: public evidence only, every fact sourced and tagged, and the move
 It stands on its own. If a question comes up, I'm easy to reach.
 
 James Bonaguro · Intersection Strategies
-info@intersectionstrategies.co · 708-420-5462
+james@intersectionstrategies.co · 708-420-5462
