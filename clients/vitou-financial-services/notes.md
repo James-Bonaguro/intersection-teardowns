@@ -16,4 +16,4 @@
 
 ## Package
 - Report + cover doc (standard)
-- Phase 2 deck: social + technology build-out (see vitou-phase-2-handoff/). No pricing.
+- Phase 2 deck: social + technology build-out (see `phase-2/`). No pricing.
