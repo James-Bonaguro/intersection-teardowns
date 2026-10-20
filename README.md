@@ -19,7 +19,7 @@ A teardown is an outside-in review of a company built only from public evidence:
 ## Layout
 
 ```
-SOP.md                    the procedure, sale to follow-up
+SOP.md                    the procedure, kickoff to follow-up
 CLAUDE.md                 instructions for any AI assistant working in this repo
 standards/                rules every report must pass
   house-rules.md
@@ -31,6 +31,8 @@ agents/                   one prompt per role; the workflow loads these
 workflow/run-teardown.js  runs the agents in order
 templates/                brief, outline, checklists, emails
 designs/                  report template, pitch deck, live client reports
+  reference/              outside references (Muse cover doc v1)
+research/                 internal research; never client-facing
 clients/<slug>/           brief, captures, drafts, final, fact-check log, PDF
 ```
 

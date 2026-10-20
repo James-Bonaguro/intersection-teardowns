@@ -54,10 +54,10 @@ Same method, same evidence rules. Different target, different job. This one is a
 
 1. **The verdict.** The bottom line, a six-row scorecard, and the three things to know.
 2. **What's working.** The strengths worth protecting, with hard numbers.
-3. **Where you're exposed.** Online proof, social and email, and the first step a prospect takes, most important first.
+3. **Where you're exposed.** Online proof, social and email (graded against the social standard), and the first step a prospect takes, most important first.
 4. **The biggest opening.** Today versus after the moves.
-5. **The moves, ranked.** Three or four moves in order, each with how we'll measure it, plus a "this week" checklist. Start with move 1.
-6. **Limits.** What I could not see, labeled honestly instead of filled in with guesses.
+5. **The moves, ranked.** Three or four moves in order, each with how to measure it, plus a "this week" checklist. Start with move 1.
+6. **Limits.** What I could not see, labeled honestly instead of filled in with guesses. A numbered sources appendix follows.
 
 Every important claim carries its source and the date I checked it. Where I am interpreting rather than observing, I say so.
 

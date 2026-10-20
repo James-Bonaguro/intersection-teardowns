@@ -11,6 +11,4 @@ Read every file in `standards/` before starting. They override anything below.
 5. Every move fits what the client can deliver.
 6. Agreement between drafts is never corroboration.
 
-Every client package = **report + cover doc**. When laying out, fill `templates/cover-doc.md` for this client too, in the Analyst Dossier style.
-
-**Output:** `merged.md` in the report structure, with a short list of conflicts for the fact-checker at the top (removed before final).
+**Output:** `merged.md` in the report structure, with a short list of conflicts for the fact-checker at the top (removed before final). Also save `cover-doc.md`: `templates/cover-doc.md` with this client's `{{placeholders}}` filled. Every client package = **report + cover doc**.
