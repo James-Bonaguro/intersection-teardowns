@@ -1,0 +1,28 @@
+{
+  "company": "Vitou Financial Services",
+  "slug": "vitou-financial-services",
+  "url": "https://vitoufinancial.com/",
+  "type": "self",
+  "client": "Vitou Financial Services (Jim, Dan, and Jack Vitou)",
+  "contact_name": "Jack Vitou",
+  "report_date": "2026-10-15",
+  "target_customer": "Pre-retirees and retirees in northeast Ohio",
+  "market": "Cleveland / northeast Ohio retirement planning",
+  "decision": "What to fix first to win local retirement-planning clients and modernize the practice",
+  "regulated": true,
+  "socials": {
+    "linkedin_company": "https://www.linkedin.com/company/vitou-financial-services",
+    "linkedin_people": [
+      "Jack Vitou",
+      "Dan Vitou"
+    ],
+    "facebook": "Vitou Financial Services",
+    "instagram": "",
+    "youtube": "",
+    "newsletter": ""
+  },
+  "competitors": [
+    "Wealth Enhancement Group, Rocky River"
+  ],
+  "notes": "Family-run, Rocky River OH. Advisory through AE Wealth Management; compliance reviews all marketing. Team runs on Excel and Income Solver."
+}

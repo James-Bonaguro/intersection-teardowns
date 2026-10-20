@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>body{margin:0;background:#1A1A1A}a{color:#8B1E2D}a:hover{color:#1A1A1A}</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+<section data-label="01 Title" data-screen-label="01" data-speaker-notes="Open with their name on screen. One line on why you reached out." style="background:#1A1A1A;color:#F7F5F0;display:flex;flex-direction:column;padding:88px 120px 72px 152px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box;border-left:16px solid #8B1E2D">
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#B8B2A6;border-bottom:1px solid #3A3733;padding-bottom:24px">
+    <span>Confidential</span><span>Prepared for {{ prospectName }}</span>
+  </div>
+  <div style="margin-top:auto;margin-bottom:auto;display:flex;flex-direction:column;gap:36px">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:28px;letter-spacing:0.2em;text-transform:uppercase;color:#D9A0A8">An outside-in business review</div>
+    <h1 style="margin:0;font-size:184px;font-weight:600;line-height:0.95;letter-spacing:-0.02em">Company Teardown</h1>
+    <p style="margin:0;font-size:46px;line-height:1.3;max-width:1300px;color:#E4DFD4;text-wrap:pretty">How a business makes money, where it's exposed, and what to do next. One report.</p>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#B8B2A6;border-top:1px solid #3A3733;padding-top:24px">
+    <span>James Bonaguro · Intersection Strategies</span><span>[Month 2026]</span>
+  </div>
+</section>
+
+<section data-label="02 Problem" data-screen-label="02" data-speaker-notes="Insiders see plans; outsiders see exposure. The gap is where surprises come from." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">01 / The problem</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">You're too close to your own company to see where it's exposed.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid #1A1A1A">
+    <div style="padding:40px 64px 0 0;border-right:1px solid #D9D4C7;display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#6B665D">What you see</div>
+      <p style="margin:0;font-size:40px;line-height:1.35">Your roadmap. Your pipeline. Your numbers.</p>
+    </div>
+    <div style="padding:40px 0 0 64px;display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">What the market sees</div>
+      <p style="margin:0;font-size:40px;line-height:1.35">The pricing gap. The weak flank a rival will attack. The risk an investor will flag.</p>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>02</span></div>
+</section>
+
+<section data-label="03 What it is" data-screen-label="03" data-speaker-notes="Everything comes from public signals. No access to their systems needed." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">02 / What a teardown is</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">A teardown turns public signals into a clear verdict on a business.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:1fr 80px 1fr 80px 1fr;align-items:stretch">
+    <div style="border-top:2px solid #1A1A1A;padding-top:28px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#6B665D">INPUTS</div>
+      <div style="font-size:34px;line-height:1.5">Website &amp; pricing<br>Product &amp; reviews<br>Hiring &amp; leadership<br>Filings &amp; press</div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:48px;color:#8B1E2D">→</div>
+    <div style="border-top:2px solid #1A1A1A;padding-top:28px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#6B665D">ANALYSIS</div>
+      <div style="font-size:34px;line-height:1.5">A 10-part framework applied to one company, benchmarked against its rivals.</div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:48px;color:#8B1E2D">→</div>
+    <div style="border-top:2px solid #8B1E2D;padding-top:28px;display:flex;flex-direction:column;gap:20px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">OUTPUTS</div>
+      <div style="font-size:34px;line-height:1.5">The verdict &amp; scorecard<br>Risks &amp; blind spots<br>Ranked recommendations</div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>03</span></div>
+</section>
+
+<section data-label="04 Inside" data-screen-label="04" data-speaker-notes="Don't read all ten. Point to the two most relevant to this prospect." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">03 / What's inside</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">Ten sections. One verdict.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #1A1A1A;border-left:1px solid #D9D4C7">
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">01</span><span style="font-size:34px;font-weight:600;line-height:1.15">Snapshot</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">02</span><span style="font-size:34px;font-weight:600;line-height:1.15">Business Model</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">03</span><span style="font-size:34px;font-weight:600;line-height:1.15">Market &amp; Competitors</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">04</span><span style="font-size:34px;font-weight:600;line-height:1.15">Product &amp; Moat</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">05</span><span style="font-size:34px;font-weight:600;line-height:1.15">Social &amp; Go-to-Market</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">06</span><span style="font-size:34px;font-weight:600;line-height:1.15">Financial Signals</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">07</span><span style="font-size:34px;font-weight:600;line-height:1.15">Team &amp; Execution</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px;background:#F1E6E3"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">08</span><span style="font-size:34px;font-weight:600;line-height:1.15">Risks &amp; Red Flags</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">09</span><span style="font-size:34px;font-weight:600;line-height:1.15">Opportunities</span></div>
+    <div style="padding:28px 28px 36px;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:14px;background:#F1E6E3"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">10</span><span style="font-size:34px;font-weight:600;line-height:1.15">Recommendations</span></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>04</span></div>
+</section>
+
+<section data-label="05 Social" data-screen-label="05" data-speaker-notes="Every teardown grades social first. Attention is how buyers find you now; this is the standard we measure against. Stats are a financial-services example; swap in the prospect's industry if you have one." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">03 / What's inside · Social first</div>
+  <h2 style="margin:28px 0 0;font-size:72px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1600px;text-wrap:balance">Attention is the job now. Every teardown grades social first.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:96px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:40px">
+      <div style="display:flex;flex-direction:column;gap:12px;border-top:4px solid #8B1E2D;padding-top:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:88px;font-weight:500;line-height:1;color:#8B1E2D">~50%</span><span style="font-size:28px;line-height:1.35;color:#3A3733">of investors say social media affects which adviser they hire. 20% call it the deciding factor. (Hartford Funds, 2021)</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#6B665D">THE STANDARD WE GRADE AGAINST</span>
+      <div style="margin-top:16px;display:flex;flex-direction:column;border-top:2px solid #1A1A1A">
+        <div style="display:grid;grid-template-columns:220px 260px 1fr;gap:24px;padding:18px 16px;border-bottom:1px solid #D9D4C7;align-items:baseline;background:#F1E6E3"><span style="font-size:32px;font-weight:600">LinkedIn</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">2–3× / WEEK</span><span style="font-size:28px;line-height:1.35;color:#3A3733">Leads. Company page and founders.</span></div>
+        <div style="display:grid;grid-template-columns:220px 260px 1fr;gap:24px;padding:18px 16px;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:32px;font-weight:600">Facebook</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">SAME POST</span><span style="font-size:28px;line-height:1.35;color:#3A3733">Cross-posted, every time.</span></div>
+        <div style="display:grid;grid-template-columns:220px 260px 1fr;gap:24px;padding:18px 16px;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:32px;font-weight:600">Instagram</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">SAME POST</span><span style="font-size:28px;line-height:1.35;color:#3A3733">Cross-posted. Missing accounts get flagged.</span></div>
+        <div style="display:grid;grid-template-columns:220px 260px 1fr;gap:24px;padding:18px 16px;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:32px;font-weight:600">Email</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#8B1E2D">MONTHLY</span><span style="font-size:28px;line-height:1.35;color:#3A3733">The month’s best posts, to the whole list.</span></div>
+      </div>
+      <p style="margin:28px 0 0;font-size:28px;line-height:1.45;color:#3A3733;text-wrap:pretty">Education, commentary, and analysis, planned monthly and scheduled. Topics come from what buyers are actually asking online, not memory.</p>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>05</span></div>
+</section>
+
+<section data-label="06 Sample" data-screen-label="06" data-speaker-notes="Show, don't tell. This is the page most clients forward to their team." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">04 / Sample page</div>
+  <div style="flex:1;display:grid;grid-template-columns:720px 1fr;gap:96px;align-items:center;min-height:0">
+    <div style="height:820px;overflow:hidden;display:flex;justify-content:center;padding-top:40px;box-sizing:border-box">
+      <div style="width:600px;height:840px;background:#FFFDF8;box-shadow:0 2px 4px rgba(26,26,26,0.06),0 24px 60px rgba(26,26,26,0.14);transform:rotate(-2.5deg);padding:44px 44px;box-sizing:border-box;display:flex;flex-direction:column;gap:18px;flex-shrink:0">
+        <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:10px"><span>NORTHWIND FREIGHT</span><span>COMPANY TEARDOWN</span></div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.14em;color:#8B1E2D">01 / THE VERDICT</div>
+        <div style="font-size:28px;font-weight:600;line-height:1.15">Strong product, fragile revenue base.</div>
+        <div style="border:1px solid #1A1A1A;padding:16px 18px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#8B1E2D">BOTTOM LINE</span><span style="font-size:13px;line-height:1.5">Northwind has the best routing product in its segment, but 38% of revenue sits with two customers. Diversify before the next raise.</span></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+          <div style="border:1px solid #D9D4C7;padding:10px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#6B665D">MOAT</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;background:#1A1A1A;color:#F7F5F0;padding:2px 6px;align-self:flex-start">STRONG</span></div>
+          <div style="border:1px solid #D9D4C7;padding:10px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#6B665D">GROWTH</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;border:1px solid #1A1A1A;padding:1px 6px;align-self:flex-start">MIXED</span></div>
+          <div style="border:1px solid #D9D4C7;padding:10px;display:flex;flex-direction:column;gap:6px"><span style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#6B665D">RISK</span><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;background:#8B1E2D;color:#F7F5F0;padding:2px 6px;align-self:flex-start">HIGH</span></div>
+        </div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#6B665D;margin-top:6px">3 THINGS TO KNOW</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;line-height:1.45">
+          <div style="display:flex;gap:10px"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">1</span><span>Two accounts drive 38% of revenue.</span></div>
+          <div style="display:flex;gap:10px"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">2</span><span>Pricing sits 20% below the nearest rival.</span></div>
+          <div style="display:flex;gap:10px"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">3</span><span>Sales hiring has stalled for two quarters.</span></div>
+        </div>
+        <div style="margin-top:auto;height:120px;background:repeating-linear-gradient(135deg,#EFEBE2 0 8px,#F7F5F0 8px 16px);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#6B665D">CHART</div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:56px">
+      <h2 style="margin:0;font-size:72px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;text-wrap:balance">Every report opens with a one-page verdict you can act on.</h2>
+      <div style="display:flex;flex-direction:column;gap:32px">
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:20px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;color:#8B1E2D">01</span><span style="font-size:34px;line-height:1.35">A four-sentence bottom line.</span></div>
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:20px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;color:#8B1E2D">02</span><span style="font-size:34px;line-height:1.35">A scorecard: moat, growth, economics, execution, risk.</span></div>
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:20px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="font-family:'IBM Plex Mono',monospace;font-size:28px;color:#8B1E2D">03</span><span style="font-size:34px;line-height:1.35">The three things you need to know.</span></div>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>06</span></div>
+</section>
+
+<section data-label="07 Two uses" data-screen-label="07" data-speaker-notes="Ask: which would be more useful to you right now?" style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">05 / Two ways to use it</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">Point it at yourself, or at the competitor you worry about most.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:1fr 1fr;gap:48px">
+    <div style="border:1px solid #1A1A1A;padding:48px 52px;display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#6B665D">YOUR COMPANY</div>
+      <div style="font-size:52px;font-weight:600;line-height:1.1">Find the blind spots.</div>
+      <p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">See your business the way a buyer, rival, or investor does, before they act on it.</p>
+    </div>
+    <div style="border:1px solid #8B1E2D;background:#F1E6E3;padding:48px 52px;display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">ANY COMPETITOR</div>
+      <div style="font-size:52px;font-weight:600;line-height:1.1">Know how they win.</div>
+      <p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">Their model, pricing, weak flanks, and where they're likely headed next.</p>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>07</span></div>
+</section>
+
+<section data-label="08 Case study" data-screen-label="08" data-speaker-notes="Real work. Public evidence only, captured July 2026. No lead form was submitted." style="background:#1A1A1A;color:#F7F5F0;display:flex;flex-direction:column;padding:88px 120px 56px 152px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box;border-left:16px solid #8B1E2D">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A0A8">Case study / Empire Today · July 2026</div>
+  <div style="flex:1;display:grid;grid-template-columns:minmax(0,1fr) 920px;gap:80px;align-items:center;min-height:0">
+    <div style="display:flex;flex-direction:column;gap:40px">
+      <h2 style="margin:0;font-size:88px;font-weight:600;line-height:1.02;letter-spacing:-0.02em;text-wrap:balance">A funnel built to get inside the home.</h2>
+      <p style="margin:0;font-size:34px;line-height:1.4;color:#E4DFD4;text-wrap:pretty">Empire Today's site isn't a store. Its only real conversion is a booked in-home estimate. The sale closes later, in the living room.</p>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid #3A3733;padding-top:28px">
+        <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:64px;color:#F7F5F0">13</span><span style="font-size:24px;color:#B8B2A6">Funnel stages scored</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:64px;color:#F7F5F0">1</span><span style="font-size:24px;color:#B8B2A6">Operating blueprint</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:'IBM Plex Mono',monospace;font-size:64px;color:#F7F5F0">0</span><span style="font-size:24px;color:#B8B2A6">Lead forms submitted</span></div>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <img src="assets/empire-hero.jpg" alt="Empire Today homepage" style="width:100%;display:block;border:1px solid #3A3733;box-shadow:0 30px 80px rgba(0,0,0,0.5)">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:24px;color:#B8B2A6">Homepage, captured July 2026</span>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#B8B2A6;border-top:1px solid #3A3733;padding-top:24px"><span>COMPANY TEARDOWN</span><span>08</span></div>
+</section>
+
+<section data-label="09 Case findings" data-screen-label="09" data-speaker-notes="Walk the three markers on the screenshot. Each one is a decision they made on purpose." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">Case study / Empire Today</div>
+  <h2 style="margin:28px 0 0;font-size:72px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1600px;text-wrap:balance">The funnel is strongest where the buyer knows the least.</h2>
+  <div style="flex:1;display:grid;grid-template-columns:960px minmax(0,1fr);gap:72px;align-items:center;min-height:0">
+    <div style="position:relative;width:960px">
+      <img src="assets/empire-evidence.jpg" alt="Empire Today estimate form, step one" style="width:100%;display:block;border:1px solid #D9D4C7;box-shadow:0 2px 4px rgba(26,26,26,0.06),0 24px 60px rgba(26,26,26,0.14)">
+      <span style="position:absolute;left:28.5%;top:23%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#8B1E2D;border:3px solid #F7F5F0;box-shadow:0 4px 12px rgba(26,26,26,0.3);color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">1</span><span style="position:absolute;left:42%;top:23%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#8B1E2D;border:3px solid #F7F5F0;box-shadow:0 4px 12px rgba(26,26,26,0.3);color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">2</span><span style="position:absolute;left:22%;top:9%;transform:translate(-50%,-50%);width:40px;height:40px;border-radius:50%;background:#8B1E2D;border:3px solid #F7F5F0;box-shadow:0 4px 12px rgba(26,26,26,0.3);color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">3</span>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <div style="display:grid;grid-template-columns:52px 1fr;gap:24px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="width:52px;height:52px;border-radius:50%;background:#8B1E2D;color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">1</span><div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:34px;font-weight:600;line-height:1.15">Asks about floors, not you.</span><span style="font-size:27px;line-height:1.4;color:#3A3733">No contact details up front. The visitor starts moving before trust is asked for.</span></div></div>
+      <div style="display:grid;grid-template-columns:52px 1fr;gap:24px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="width:52px;height:52px;border-radius:50%;background:#8B1E2D;color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">2</span><div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:34px;font-weight:600;line-height:1.15">The calendar is a choke point.</span><span style="font-size:27px;line-height:1.4;color:#3A3733">Dates stay locked until a ZIP code is entered.</span></div></div>
+      <div style="display:grid;grid-template-columns:52px 1fr;gap:24px;border-top:1px solid #D9D4C7;padding-top:24px"><span style="width:52px;height:52px;border-radius:50%;background:#8B1E2D;color:#F7F5F0;font-family:'IBM Plex Mono',monospace;font-size:24px;display:flex;align-items:center;justify-content:center">3</span><div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:34px;font-weight:600;line-height:1.15">Urgency, stacked three ways.</span><span style="font-size:27px;line-height:1.4;color:#3A3733">A seasonal discount, appointment scarcity, and dated coupons.</span></div></div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>09</span></div>
+</section>
+
+<section data-label="10 Case scores" data-screen-label="10" data-speaker-notes="Scores use the teardown's 1 to 10 framework. Higher friction is worse." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">Case study / Empire Today</div>
+  <h2 style="margin:28px 0 0;font-size:72px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1600px;text-wrap:balance">Friction spikes right where the buyer is ready to commit.</h2>
+  <div style="margin-top:32px;margin-bottom:auto;display:flex;flex-direction:column">
+    <div style="display:flex;gap:48px;font-size:26px;padding-bottom:20px;border-bottom:1px solid #1A1A1A;padding-left:380px"><span style="display:flex;align-items:center;gap:12px"><span style="width:22px;height:22px;background:#1A1A1A"></span>Persuasion</span><span style="display:flex;align-items:center;gap:12px"><span style="width:22px;height:22px;background:#B8B2A6"></span>Clarity</span><span style="display:flex;align-items:center;gap:12px"><span style="width:22px;height:22px;background:#8B1E2D"></span>Friction</span></div>
+    <div style="display:grid;grid-template-columns:380px 1180px;align-items:center;padding:12px 0;border-bottom:1px solid #D9D4C7"><span style="font-size:32px;font-weight:600;line-height:1.2">Homepage</span><div style="display:flex;flex-direction:column;gap:6px;background:repeating-linear-gradient(90deg,#E4DFD4 0 1px,transparent 1px 220px);background-size:1101px 100%;background-repeat:no-repeat"><div style="display:flex;align-items:center;gap:14px"><div style="width:990px;height:18px;background:#1A1A1A"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">9</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:990px;height:18px;background:#B8B2A6"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">9</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:330px;height:18px;background:#8B1E2D"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#8B1E2D">3</span></div></div></div><div style="display:grid;grid-template-columns:380px 1180px;align-items:center;padding:12px 0;border-bottom:1px solid #D9D4C7"><span style="font-size:32px;font-weight:600;line-height:1.2">Lead form, step 1</span><div style="display:flex;flex-direction:column;gap:6px;background:repeating-linear-gradient(90deg,#E4DFD4 0 1px,transparent 1px 220px);background-size:1101px 100%;background-repeat:no-repeat"><div style="display:flex;align-items:center;gap:14px"><div style="width:990px;height:18px;background:#1A1A1A"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">9</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:990px;height:18px;background:#B8B2A6"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">9</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:220px;height:18px;background:#8B1E2D"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#8B1E2D">2</span></div></div></div><div style="display:grid;grid-template-columns:380px 1180px;align-items:center;padding:12px 0;border-bottom:1px solid #D9D4C7"><span style="font-size:32px;font-weight:600;line-height:1.2">ZIP + schedule gate</span><div style="display:flex;flex-direction:column;gap:6px;background:repeating-linear-gradient(90deg,#E4DFD4 0 1px,transparent 1px 220px);background-size:1101px 100%;background-repeat:no-repeat"><div style="display:flex;align-items:center;gap:14px"><div style="width:550px;height:18px;background:#1A1A1A"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">5</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:440px;height:18px;background:#B8B2A6"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">4</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:880px;height:18px;background:#8B1E2D"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#8B1E2D">8</span></div></div></div><div style="display:grid;grid-template-columns:380px 1180px;align-items:center;padding:12px 0;"><span style="font-size:32px;font-weight:600;line-height:1.2">Hidden contact steps</span><div style="display:flex;flex-direction:column;gap:6px;background:repeating-linear-gradient(90deg,#E4DFD4 0 1px,transparent 1px 220px);background-size:1101px 100%;background-repeat:no-repeat"><div style="display:flex;align-items:center;gap:14px"><div style="width:440px;height:18px;background:#1A1A1A"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">4</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:330px;height:18px;background:#B8B2A6"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#1A1A1A">3</span></div><div style="display:flex;align-items:center;gap:14px"><div style="width:990px;height:18px;background:#8B1E2D"></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;line-height:1;color:#8B1E2D">9</span></div></div></div>
+    <div style="position:relative;height:40px;margin-left:380px;border-top:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:24px;color:#6B665D"><span style="position:absolute;left:0px;top:10px;transform:translateX(-50%)">0</span><span style="position:absolute;left:220px;top:10px;transform:translateX(-50%)">2</span><span style="position:absolute;left:440px;top:10px;transform:translateX(-50%)">4</span><span style="position:absolute;left:660px;top:10px;transform:translateX(-50%)">6</span><span style="position:absolute;left:880px;top:10px;transform:translateX(-50%)">8</span><span style="position:absolute;left:1100px;top:10px;transform:translateX(-50%)">10</span></div>
+  </div>
+  <p style="margin:0 0 16px;font-size:26px;color:#6B665D">Scores use the teardown's 1–10 framework. Higher friction is worse.</p>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>10</span></div>
+</section>
+
+<section data-label="11 Case moves" data-screen-label="11" data-speaker-notes="This is the payoff: their weakness becomes the client's position." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">Case study / Empire Today</div>
+  <h2 style="margin:28px 0 0;font-size:72px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1600px;text-wrap:balance">Their recurring complaints become your position.</h2>
+  <p style="margin:24px 0 0;font-size:32px;line-height:1.4;color:#3A3733;max-width:1500px;text-wrap:pretty">Complaints center on opaque pricing and high-pressure selling. The way they close and the reason buyers distrust them are the same thing.</p>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:48px">
+    <div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #1A1A1A;padding-top:28px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#6B665D">THEIR WEAKNESS</span><span style="font-size:36px;font-weight:600;line-height:1.15">No price transparency</span><span style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#8B1E2D">↓</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#8B1E2D">YOUR MOVE</span><span style="font-size:30px;line-height:1.4">Publish starting ranges, then explain what changes them.</span></div>
+    <div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #1A1A1A;padding-top:28px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#6B665D">THEIR WEAKNESS</span><span style="font-size:36px;font-weight:600;line-height:1.15">No self-serve path</span><span style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#8B1E2D">↓</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#8B1E2D">YOUR MOVE</span><span style="font-size:30px;line-height:1.4">Let the buyer choose how much sales contact they want.</span></div>
+    <div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #1A1A1A;padding-top:28px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#6B665D">THEIR WEAKNESS</span><span style="font-size:36px;font-weight:600;line-height:1.15">Hidden availability</span><span style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#8B1E2D">↓</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#8B1E2D">YOUR MOVE</span><span style="font-size:30px;line-height:1.4">Show the next step before the gate.</span></div>
+    <div style="display:flex;flex-direction:column;gap:20px;border-top:2px solid #1A1A1A;padding-top:28px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#6B665D">THEIR WEAKNESS</span><span style="font-size:36px;font-weight:600;line-height:1.15">Trust drag</span><span style="font-family:'IBM Plex Mono',monospace;font-size:36px;color:#8B1E2D">↓</span><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.12em;color:#8B1E2D">YOUR MOVE</span><span style="font-size:30px;line-height:1.4">Make process transparency the guarantee.</span></div>
+  </div>
+  <p style="margin:0 0 28px;font-size:28px;line-height:1.4;border-top:1px solid #D9D4C7;padding-top:24px">Every teardown ends with a scoreboard: the metrics and cadence that show whether the response is working.</p>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>11</span></div>
+</section>
+
+<section data-label="12 Value" data-screen-label="12" data-speaker-notes="Tie each outcome to a decision they have coming up." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">06 / Why it's worth it</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">You're not buying pages. You're buying better decisions.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:64px">
+    <div style="border-top:2px solid #8B1E2D;padding-top:32px;display:flex;flex-direction:column;gap:20px"><div style="font-size:44px;font-weight:600;line-height:1.15">Sharper positioning</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">Know exactly where you beat rivals and where you don't.</p></div>
+    <div style="border-top:2px solid #8B1E2D;padding-top:32px;display:flex;flex-direction:column;gap:20px"><div style="font-size:44px;font-weight:600;line-height:1.15">Fewer surprises</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">Spot the risks before a customer, board, or buyer does.</p></div>
+    <div style="border-top:2px solid #8B1E2D;padding-top:32px;display:flex;flex-direction:column;gap:20px"><div style="font-size:44px;font-weight:600;line-height:1.15">A ranked plan</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">Recommendations ordered by impact, so you know what to do Monday.</p></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>12</span></div>
+</section>
+
+<section data-label="13 Process" data-screen-label="13" data-speaker-notes="Emphasize: their time commitment is about 75 minutes total." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">07 / How it works</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">From kickoff to verdict in [10] business days.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:repeat(3,1fr)">
+    <div style="display:flex;flex-direction:column;gap:20px;padding-right:56px"><div style="display:flex;align-items:center;gap:20px"><span style="width:28px;height:28px;border-radius:50%;background:#8B1E2D;flex-shrink:0"></span><span style="flex:1;height:2px;background:#1A1A1A"></span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">STEP 01 · DAY 1</span><div style="font-size:44px;font-weight:600;line-height:1.15">Kickoff call</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">30 minutes. Pick the target and the questions that matter.</p></div>
+    <div style="display:flex;flex-direction:column;gap:20px;padding-right:56px"><div style="display:flex;align-items:center;gap:20px"><span style="width:28px;height:28px;border-radius:50%;background:#8B1E2D;flex-shrink:0"></span><span style="flex:1;height:2px;background:#1A1A1A"></span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">STEP 02 · DAYS 2–8</span><div style="font-size:44px;font-weight:600;line-height:1.15">Research &amp; analysis</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">I do the digging. Nothing needed from your team.</p></div>
+    <div style="display:flex;flex-direction:column;gap:20px"><div style="display:flex;align-items:center;gap:20px"><span style="width:28px;height:28px;border-radius:50%;background:#8B1E2D;flex-shrink:0"></span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">STEP 03 · DAY 10</span><div style="font-size:44px;font-weight:600;line-height:1.15">Readout</div><p style="margin:0;font-size:32px;line-height:1.45;color:#3A3733">The full report plus a 45-minute walkthrough.</p></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>13</span></div>
+</section>
+
+<section data-label="14 Who" data-screen-label="14" data-speaker-notes="Name which of these the prospect is." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">08 / Who it's for</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">Built for people who decide with incomplete information.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+    <div style="display:grid;grid-template-columns:560px 1fr;gap:48px;padding:32px 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:48px;font-weight:600">Founders &amp; CEOs</span><span style="font-size:32px;line-height:1.45;color:#3A3733">Before a pricing change, a new market, or a fundraise.</span></div>
+    <div style="display:grid;grid-template-columns:560px 1fr;gap:48px;padding:32px 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:48px;font-weight:600">Investors &amp; advisors</span><span style="font-size:32px;line-height:1.45;color:#3A3733">A fast, structured second opinion on a deal.</span></div>
+    <div style="display:grid;grid-template-columns:560px 1fr;gap:48px;padding:32px 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-size:48px;font-weight:600">Sales &amp; BD leaders</span><span style="font-size:32px;line-height:1.45;color:#3A3733">Walk into a key account knowing their business cold.</span></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>14</span></div>
+</section>
+
+<section data-label="15 Packages" data-screen-label="15" data-speaker-notes="Lead with the middle option. Snapshot is the low-risk entry." style="background:#F7F5F0;color:#1A1A1A;display:flex;flex-direction:column;padding:88px 120px 56px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#8B1E2D">09 / Packages</div>
+  <h2 style="margin:28px 0 0;font-size:80px;font-weight:600;line-height:1.08;letter-spacing:-0.01em;max-width:1560px;text-wrap:balance">Start with one company. Expand when it pays off.</h2>
+  <div style="margin-top:auto;margin-bottom:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:40px;align-items:stretch">
+    <div style="border:1px solid #D9D4C7;padding:44px 44px;display:flex;flex-direction:column;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#6B665D">SNAPSHOT</span><span style="font-family:'IBM Plex Mono',monospace;font-size:56px;font-weight:500">$[—]</span><p style="margin:0;font-size:30px;line-height:1.45;color:#3A3733">The verdict, scorecard, and top risks. Five pages.</p></div>
+    <div style="border:2px solid #8B1E2D;background:#F1E6E3;padding:44px 44px;display:flex;flex-direction:column;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#8B1E2D">FULL TEARDOWN · MOST CHOSEN</span><span style="font-family:'IBM Plex Mono',monospace;font-size:56px;font-weight:500">$[—]</span><p style="margin:0;font-size:30px;line-height:1.45;color:#3A3733">All ten sections, recommendations, and a live readout.</p></div>
+    <div style="border:1px solid #D9D4C7;padding:44px 44px;display:flex;flex-direction:column;gap:20px"><span style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;color:#6B665D">COMPETITIVE SET</span><span style="font-family:'IBM Plex Mono',monospace;font-size:56px;font-weight:500">$[—]</span><p style="margin:0;font-size:30px;line-height:1.45;color:#3A3733">You plus three rivals, compared side by side.</p></div>
+  </div>
+  <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.1em;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:24px"><span>COMPANY TEARDOWN</span><span>15</span></div>
+</section>
+
+<section data-label="16 Next step" data-screen-label="16" data-speaker-notes="Stop talking. Ask which competitor." style="background:#1A1A1A;color:#F7F5F0;display:flex;flex-direction:column;padding:88px 120px 72px 152px;font-family:'Source Serif 4',Georgia,serif;box-sizing:border-box;border-left:16px solid #8B1E2D">
+  <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;letter-spacing:0.14em;text-transform:uppercase;color:#D9A0A8">10 / Next step</div>
+  <div style="margin-top:auto;margin-bottom:auto;display:flex;flex-direction:column;gap:40px">
+    <h2 style="margin:0;font-size:128px;font-weight:600;line-height:1.02;letter-spacing:-0.02em;max-width:1500px;text-wrap:balance">Name one competitor. I'll tear it down.</h2>
+    <p style="margin:0;font-size:44px;line-height:1.35;color:#E4DFD4">A 30-minute call is all it takes to start.</p>
+  </div>
+  <div style="display:flex;gap:64px;font-family:'IBM Plex Mono',monospace;font-size:28px;color:#F7F5F0;border-top:1px solid #3A3733;padding-top:28px">
+    <span>info@intersectionstrategies.co</span><span>708-420-5462</span><span>[calendar link]</span>
+  </div>
+</section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;prospectName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[Prospect Company]&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { prospectName: this.props.prospectName ?? "[Prospect Company]" };
+  }
+}
+</script>
+</body>
+</html>

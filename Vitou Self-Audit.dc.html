@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>doc-page:not(:defined){visibility:hidden}a{color:#8B1E2D}a:hover{color:#1A1A1A}</style>
+<script src="./doc-page.js"></script>
+</helmet>
+<doc-page>
+
+<section class="page" data-screen-label="01 Cover">
+  <div style="height:100%;box-sizing:border-box;position:relative;overflow:hidden;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;border-left:0.18in solid #8B1E2D;padding:0.7in 0.75in 0.6in 0.7in;display:flex;flex-direction:column">
+    <div style="position:absolute;right:-0.3in;bottom:-1.3in;font-size:8.5in;line-height:1;font-weight:600;color:#EDE9DF;pointer-events:none">V</div>
+    <div style="position:relative;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:10pt"><span>Confidential</span><span>PREPARED FOR VITOU FINANCIAL SERVICES</span></div>
+    <div style="position:relative;margin-top:2.1in;display:flex;flex-direction:column;gap:14pt">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11pt;letter-spacing:0.22em;text-transform:uppercase;color:#8B1E2D">Company Teardown · Self-Audit</div>
+      <h1 style="margin:0;font-size:52pt;font-weight:600;line-height:1;letter-spacing:-0.02em;text-wrap:balance">Vitou Financial Services</h1>
+      <p style="margin:6pt 0 0;font-size:14pt;line-height:1.45;max-width:4.8in;color:#3A3733;text-wrap:pretty">What a prospect sees before they ever call you, and where the easy wins are.</p>
+    </div>
+    <div style="position:relative;margin-top:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid #1A1A1A">
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">DATE</span><span style="font-size:11pt">15 October 2026</span></div>
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">PREPARED FOR</span><span style="font-size:11pt">Vitou Financial Services</span></div>
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">PREPARED BY</span><span style="font-size:11pt">Intersection Strategies</span></div>
+      <div style="padding:10pt 0 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">VERSION</span><span style="font-size:11pt;font-family:'IBM Plex Mono',monospace">v1.0</span></div>
+    </div>
+    <p style="position:relative;margin:18pt 0 0;font-size:9pt;line-height:1.5;color:#6B665D;max-width:5.4in">Built only from public information: the website, events, reviews, and listings. No forms were submitted and no one at the firm was contacted. This is a marketing review, not legal, compliance, or investment advice.</p>
+  </div>
+</section>
+
+<section class="page" data-screen-label="02 Verdict">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <sc-if value="{{ showNote }}" hint-placeholder-val="{{ true }}">
+      <p style="margin:20pt 0 0;font-size:11pt;font-style:italic;line-height:1.55;color:#3A3733;max-width:6in;text-wrap:pretty"><b>Quick Note:</b> Jack, here's the teardown I said I'd send. It's the same outside-in review I run on any firm, pointed at Vitou. The point isn't to criticize. It's to show you what a nervous pre-retiree finds before they ever talk to you.</p>
+    </sc-if>
+    <div style="margin-top:22pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">01 / THE VERDICT</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">You win in the room. Online, a prospect finds very little to trust.</h2>
+    <div style="margin-top:14pt;border:1px solid #1A1A1A;padding:10pt 16pt;display:flex;flex-direction:column;gap:6pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">BOTTOM LINE</span>
+      <p style="margin:0;font-size:11pt;line-height:1.55;text-wrap:pretty">The seminar engine is real: 27 events and 765 attendees in about four years. The family story, the credentials, and the compliance signals all reassure a cautious buyer. But someone who searches before they attend finds two Google reviews, a page of generic third-party reviews, a thin LinkedIn presence, no newsletter, and a website that asks for a phone number before it teaches anything. The fix is to make the first online impression as concrete as the seminar room.</p>
+    </div>
+    <div style="margin-top:18pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">SCORECARD</div>
+    <div style="margin-top:8pt;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #1A1A1A;border-left:1px solid #D9D4C7">
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">In-person trust</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">STRONG</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">27 seminars, 765 attendees</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">Credentials</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">STRONG</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">Two CFP®s, BBB A+</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt;background:#F1E6E3"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">Online proof</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">WEAK</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">Two Google reviews</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">First step</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt;align-self:flex-start">MIXED</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">Phone required up front</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt;background:#F1E6E3"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">Channel mix</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">WEAK</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">One visible engine</span></div><div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:7pt;background:#F1E6E3"><span style="font-size:10.5pt;font-weight:600;line-height:1.2">Social &amp; email</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">WEAK</span><span style="font-size:9pt;line-height:1.4;color:#3A3733">Thin LinkedIn, no newsletter</span></div>
+    </div>
+    <div style="margin-top:10pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">3 THINGS TO KNOW</div>
+    <div style="margin-top:8pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:9pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">1</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">The seminar room is your edge.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">About 28 people a room, roughly seven times a year. Most firms can't do that.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">5</sup></span></div></div>
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:9pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">2</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">Your online reviews don't match your reputation.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">The largest set, 11 on Trustburn, reads as generic and averages 4.0.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">8</sup></span></div></div>
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:9pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">3</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">The website asks before it gives.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">The free guide requires a phone number. Booking means waiting for a callback.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1,4</sup></span></div></div>
+    </div>
+    <div style="margin-top:auto;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>2</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="03 What's working">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">02 / WHAT'S WORKING</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">The seminar room is a real, repeatable engine.</h2>
+    <div style="margin-top:18pt;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0.35in">
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <p style="margin:0">Your public Eventbrite history shows 27 events and 765 attendees over about four years, in Elyria, Westlake, and Independence.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">5</sup> That's about 28 people per room and roughly one event every seven to eight weeks. Small rooms in community college buildings create quiet trust, and registration captures contact details for follow-up.</p>
+        <p style="margin:0">The family story does the reassurance work: three generations, a founder with more than three decades in the business, and two CFP® professionals in Dan and you.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">2</sup> For a cautious pre-retiree, that continuity feels personal and safe, which is exactly what a regulated financial sale needs.</p>
+        <p style="margin:0">Your legitimacy signals are in place: a BBB A+ rating, a BrokerCheck badge in the site footer, and an SEC-registered advisory framework through AE Wealth Management.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1,6,9</sup> All of it reads as calm and compliant to someone doing their homework.</p>
+        <p style="margin:0">And you post more than you probably get credit for. The Facebook page carries roughly weekly educational posts.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">10</sup> The gap isn't effort.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14pt;border-left:1px solid #D9D4C7;padding-left:0.25in">
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">27</span><span style="font-size:10pt;color:#3A3733">Seminars on Eventbrite, about four years</span></div>
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">765</span><span style="font-size:10pt;color:#3A3733">Total attendees</span></div>
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">~28</span><span style="font-size:10pt;color:#3A3733">People per room (est.)</span></div>
+        <blockquote style="margin:4pt 0 0;font-size:11.5pt;font-style:italic;line-height:1.45;border-top:1px solid #D9D4C7;padding-top:10pt">"I love being able to help people feel a sense of relief and peace as they head into retirement."<span style="display:block;margin-top:6pt;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">— Dan Vitou, homepage</span></blockquote>
+      </div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">Most firms can't fill a room seven times a year, four years running. Everything else in this report is about making the internet as convincing as that room.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>3</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="04 Online proof">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">03 / ONLINE PROOF</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Your reputation lives in the room, not on the internet.</h2>
+    <p style="margin:12pt 0 0;font-size:10.5pt;line-height:1.55;max-width:6in;text-wrap:pretty">Most prospects search before they attend, call, or bring a spouse. This is what they find today.</p>
+    <table style="margin-top:12pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.4">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:6pt 6pt 6pt 8pt;font-weight:400;width:24%">SOURCE</th><th style="padding:6pt;font-weight:400;text-align:right;width:10%">REVIEWS</th><th style="padding:6pt;font-weight:400;text-align:right;width:10%">RATING</th><th style="padding:6pt;font-weight:400;width:12%">LATEST</th><th style="padding:6pt 0 6pt 6pt;font-weight:400">WHAT A PROSPECT NOTICES</th></tr></thead>
+      <tbody style="font-variant-numeric:tabular-nums">
+        <tr><td style="padding:7pt 6pt 7pt 8pt;font-weight:600;vertical-align:top">Google profile<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">7</sup></td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">2</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">5.0</td><td style="padding:7pt 6pt;font-family:'IBM Plex Mono',monospace;vertical-align:top">—</td><td style="padding:7pt 0 7pt 6pt;vertical-align:top">No hours listed. Google shows an "Add hours" prompt.</td></tr>
+        <tr style="background:#EFEBE2"><td style="padding:7pt 6pt 7pt 8pt;font-weight:600;vertical-align:top">BBB<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">6</sup></td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">1</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">5.0</td><td style="padding:7pt 6pt;font-family:'IBM Plex Mono',monospace;vertical-align:top">Nov 2024</td><td style="padding:7pt 0 7pt 6pt;vertical-align:top">A+ rating, not accredited. The one review largely repeats a Google review.</td></tr>
+        <tr style="background:#F1E6E3;border-left:3px solid #8B1E2D"><td style="padding:7pt 6pt 7pt 8pt;font-weight:600;vertical-align:top">Trustburn<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">8</sup></td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">11</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">4.0</td><td style="padding:7pt 6pt;font-family:'IBM Plex Mono',monospace;vertical-align:top">~3 yrs</td><td style="padding:7pt 0 7pt 6pt;vertical-align:top">Unclaimed listing. Generic wording, one-off reviewers, four rated 3 of 5.</td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 8pt;font-weight:600;vertical-align:top">Client stories &amp; video</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">0</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace;vertical-align:top">—</td><td style="padding:7pt 6pt;font-family:'IBM Plex Mono',monospace;vertical-align:top">—</td><td style="padding:7pt 0 7pt 6pt;vertical-align:top">None found on the website or social pages.</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:20pt;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0.35in">
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">THE TRUSTBURN PROBLEM</span>
+        <p style="margin:0">Trustburn holds more Vitou reviews than everywhere else combined. All 11 come from accounts that have posted only one review, all appeared around the same time, and the wording is interchangeable. Four call the service merely "satisfactory."<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">8</sup></p>
+        <p style="margin:0">Whoever posted them, a prospect who lands there reads filler at best. The listing is unclaimed, so you can claim it, add accurate details, and point real clients to the platforms that matter.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14pt;border-left:1px solid #D9D4C7;padding-left:0.25in">
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">2</span><span style="font-size:10pt;color:#3A3733">Google reviews, for a firm founded in 1990</span></div>
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">0</span><span style="font-size:10pt;color:#3A3733">Client stories or videos found</span></div>
+      </div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">A referral hears glowing things from a friend, searches you, and finds two Google reviews and a page of generic ones. Closing that gap is the cheapest win in this report.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>4</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="05 Social &amp; email">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:18pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">04 / SOCIAL &amp; EMAIL</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">LinkedIn should lead. Today, Facebook does all the work.</h2>
+    <table style="margin-top:12pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.45">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:5pt 6pt 5pt 0;font-weight:400;width:26%">CHANNEL</th><th style="padding:5pt 6pt;font-weight:400;width:17%">STATUS</th><th style="padding:5pt 0 5pt 6pt;font-weight:400">WHAT A PROSPECT SEES</th></tr></thead>
+      <tbody><tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:6pt 6pt 6pt 0;font-weight:600;vertical-align:top">LinkedIn, company page</td><td style="padding:6pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;border:1px solid #1A1A1A;padding:1pt 6pt">THIN</span></td><td style="padding:6pt 0 6pt 6pt;vertical-align:top">Linked from the site, but sparse, with 2–10 employees listed.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">14</sup></td></tr><tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:6pt 6pt 6pt 0;font-weight:600;vertical-align:top">LinkedIn, personal</td><td style="padding:6pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;border:1px solid #1A1A1A;padding:1pt 6pt">THIN</span></td><td style="padding:6pt 0 6pt 6pt;vertical-align:top">Jack posts occasionally, sometimes resharing firm posts. Cadence and reach need a logged-in review.</td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:6pt 6pt 6pt 0;font-weight:600;vertical-align:top">Facebook</td><td style="padding:6pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt">ACTIVE</span></td><td style="padding:6pt 0 6pt 6pt;vertical-align:top">Roughly weekly educational posts. Intro, address, and contact details are complete.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">10</sup></td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:6pt 6pt 6pt 0;font-weight:600;vertical-align:top">Instagram</td><td style="padding:6pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">MISSING</span></td><td style="padding:6pt 0 6pt 6pt;vertical-align:top">No account linked from the site, and none found in search.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1,15</sup></td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:6pt 6pt 6pt 0;font-weight:600;vertical-align:top">Email newsletter</td><td style="padding:6pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">MISSING</span></td><td style="padding:6pt 0 6pt 6pt;vertical-align:top">No signup anywhere on the site. The only email capture is the gated checklist.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup></td></tr></tbody>
+    </table>
+    <div style="margin-top:12pt;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0.35in">
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">WHY IT MATTERS HERE</span>
+        <p style="margin:0">Jim's bio cites work with companies like KeyCorp, BP, and Steris.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">2</sup> Professionals like those still pay attention on LinkedIn, and it's where Dan and you can show up as people, not just a brand.</p><p style="margin:0">A newsletter does the rest. Everyone who registers for a seminar gives you an email address. Without one, the only way back to them is the next invite or a phone call.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14pt;border-left:1px solid #D9D4C7;padding-left:0.25in"><div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">0</span><span style="font-size:10pt;color:#3A3733">Ways to subscribe and hear from you between seminars</span></div><div style="display:flex;flex-direction:column;gap:4pt;border-top:1px solid #D9D4C7;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;color:#6B665D">SEARCH CAUTION</span><span style="font-size:10pt;line-height:1.5">A separately branded firm, The Vitou Group, also appears when people search the name.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">16</sup> One consistent handle everywhere helps the right Vitou show up.</span></div></div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">Post on LinkedIn first, then share the same post to Facebook and Instagram. Put the website link in every profile, not every post.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>5</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="06 Social front door">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:14pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">05 / SOCIAL IS THE FRONT DOOR</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Attention is the job now. Social is where authority gets built.</h2>
+    <p style="margin:8pt 0 0;font-size:10.5pt;line-height:1.55;max-width:6.4in;text-wrap:pretty">Social media is how most people find their way to a website today, and investors vet advisers there before they call. The firm that shows up every week, with a point of view, becomes the name people already trust when they’re ready.</p>
+    <div style="margin-top:8pt;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.25in">
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">~50%</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">of investors say social media affects which adviser they hire (Hartford Funds, 2021)<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">17</sup></span></div>
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">20%</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">said an adviser’s social presence was the deciding factor (same study)<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">17</sup></span></div>
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">85%</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">of advisers using social for business use LinkedIn, the top channel (Putnam, 2020)<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">18</sup></span></div>
+    </div>
+    <div style="margin-top:10pt;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0.3in">
+      <div style="display:flex;flex-direction:column">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">THE STANDARD</span>
+        <table style="margin-top:6pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.4">
+          <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:4pt 6pt 4pt 0;font-weight:400">CHANNEL</th><th style="padding:4pt 6pt;font-weight:400">CADENCE</th><th style="padding:4pt 0 4pt 6pt;font-weight:400">ROLE</th></tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">LinkedIn</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">2–3× / WEEK</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Leads. Firm page plus Dan and Jack personally.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Facebook</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">SAME POST</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Cross-post. Already active, keep it going.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Instagram</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">SAME POST</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Doesn’t exist yet. Create it and cross-post.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Email</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">MONTHLY</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Best posts of the month, to every registrant.</td></tr>
+          </tbody>
+        </table>
+        <span style="margin-top:8pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">ON AUTOPILOT</span>
+        <p style="margin:6pt 0 0;font-size:10pt;line-height:1.5;text-wrap:pretty">A month of posts planned in one sitting, approved by compliance in one batch, then scheduled through the firm’s approved tool. Nothing depends on someone remembering to post on a Tuesday.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">THE MIX</span>
+        <div style="margin-top:6pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Education</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Plain answers to the questions clients already ask.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Commentary</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Your take on the week’s news and what it means for a Cleveland retiree.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Analysis</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Breaking down one rule, rate, or market move.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Proof</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Seminar recaps and, with sign-off, client stories.</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:10pt;border:1px solid #1A1A1A;padding:9pt 14pt;display:flex;flex-direction:column;gap:5pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">NEVER RUN OUT OF TOPICS</span>
+      <p style="margin:0;font-size:10pt;line-height:1.5;text-wrap:pretty">You’re the experts on the advice. A simple scraping setup (Firecrawl or similar, feeding a spreadsheet) can pull what retirees are asking each month in forums, search, and the news, and rank it by how often it comes up. You pick, you write the take, AI helps draft, compliance approves.</p>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:11pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">One post, three channels, two to three times a week, on a schedule. That’s how the seminar room’s trust reaches people who haven’t walked in yet.</p>
+    </div>
+    <div style="margin-top:12pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>6</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="07 First step">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">06 / THE FIRST STEP</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">The website asks for a phone number before it teaches anything.</h2>
+    <div style="margin-top:16pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">A FIRST-TIME VISITOR TODAY</div>
+    <div style="margin-top:8pt;display:grid;grid-template-columns:minmax(0,1fr) 14pt minmax(0,1fr) 14pt minmax(0,1fr) 14pt minmax(0,1fr);align-items:stretch;font-size:9.5pt;line-height:1.4">
+      <div style="border:1px solid #1A1A1A;padding:8pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">01</span><span>Lands on the homepage</span></div>
+      <span style="display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;color:#8B1E2D">→</span>
+      <div style="border:1px solid #1A1A1A;padding:8pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">02</span><span>Free checklist needs name, email, and phone</span></div>
+      <span style="display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;color:#8B1E2D">→</span>
+      <div style="border:1px solid #1A1A1A;padding:8pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">03</span><span>Contact form, no times shown</span></div>
+      <span style="display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;color:#8B1E2D">→</span>
+      <div style="border:1px solid #8B1E2D;background:#F1E6E3;padding:8pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#8B1E2D">04</span><span>Waits for a callback</span></div>
+    </div>
+    <div style="margin-top:12pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">ISSUE REGISTER</div>
+    <table style="margin-top:6pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.45">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:5pt 6pt 5pt 0;font-weight:400;width:26%">ISSUE</th><th style="padding:5pt 6pt;font-weight:400">WHAT A PROSPECT SEES</th><th style="padding:5pt 0 5pt 6pt;font-weight:400;width:12%;text-align:right">SEVERITY</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">One visible channel</td><td style="padding:7pt 6pt;vertical-align:top">Seminars carry the business. No newsletter, referral program, or follow-up sequence is publicly visible.</td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">HIGH</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">Phone number up front</td><td style="padding:7pt 6pt;vertical-align:top">The free guide requires name, email, and phone before the download.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup></td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt">MED</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">Seminars are hard to find</td><td style="padding:7pt 6pt;vertical-align:top">Events isn't in the main menu, and the events page says "Check back soon."<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1,3</sup></td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt">MED</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">Broken process link</td><td style="padding:7pt 6pt;vertical-align:top">The homepage "Financial Fitness planning process" link goes to /what-we-do/, which didn't load on recheck.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup></td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#E8E4DA;padding:2pt 6pt">LOW</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">Dead Disclosures link</td><td style="padding:7pt 6pt;vertical-align:top">The footer "Disclosures" link goes nowhere. Worth flagging to compliance.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup></td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#E8E4DA;padding:2pt 6pt">LOW</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:7pt 6pt 7pt 0;font-weight:600;vertical-align:top">Listings out of sync</td><td style="padding:7pt 6pt;vertical-align:top">BBB lists a 1998 start date; the website says 1990. Google has no hours.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">6,7</sup></td><td style="padding:7pt 0 7pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#E8E4DA;padding:2pt 6pt">LOW</span></td></tr>
+      </tbody>
+    </table>
+    <p style="margin:12pt 0 0;font-size:10pt;line-height:1.5;color:#3A3733;text-wrap:pretty"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">A FAIR NOTE · </span>Much of this friction is probably compliance, not neglect. Gated guides, form-only scheduling, and dense disclosures are standard across the AE Wealth Management network. The friction is still real for the prospect.</p>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">The four lower-severity items are an afternoon of fixes. The top two are strategic, and they're the subject of the next three pages.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>7</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="08 Opening">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">07 / THE BIGGEST OPENING</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Show the work before you ask for contact details.</h2>
+    <div style="margin-top:16pt;display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;max-width:6.4in;text-wrap:pretty">
+      <p style="margin:0">There's a gap between the trust you earn face to face and the proof a prospect finds online. Someone who searches first finds almost no current reviews, no client stories, and no concrete picture of what a retirement-income plan actually answers for them.</p>
+      <p style="margin:0">Almost none of this is unique to Vitou. The gated checklist, the fitness-process branding, and the contact-form scheduling are the standard playbook across the Advisors Excel network. You aren't behind your peers. But it means the opening is wide, and whoever moves first locally leapfrogs the field.</p>
+      <p style="margin:0">One nearby firm is already moving: Wealth Enhancement's Rocky River page publishes local FAQs and describes what its planning delivers.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">11</sup> Generic retirement articles won't stand out. Concrete, local, and specific will.</p>
+    </div>
+    <div style="margin-top:20pt;display:grid;grid-template-columns:1.1in minmax(0,1fr) minmax(0,1fr);border-top:1px solid #1A1A1A;font-size:10.5pt;line-height:1.45">
+      <span style="padding:7pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #1A1A1A"></span>
+      <span style="padding:7pt 10pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D;border-bottom:1px solid #1A1A1A">TODAY</span>
+      <span style="padding:7pt 10pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#8B1E2D;border-bottom:1px solid #1A1A1A;background:#F1E6E3">AFTER THE FOUR MOVES</span>
+      <span style="padding:9pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #D9D4C7">REVIEWS</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7">Two on Google, plus generic filler</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7;background:#F1E6E3">A steady flow of recent, detailed reviews</span>
+      <span style="padding:9pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #D9D4C7">FIRST STEP</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7">Phone number required</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7;background:#F1E6E3">Read a sample plan, then choose how to talk</span>
+      <span style="padding:9pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #D9D4C7">THE MEETING</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7">"Complimentary consultation"</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7;background:#F1E6E3">What it covers, who it suits, what to bring</span>
+      <span style="padding:9pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #D9D4C7">STAYING IN TOUCH</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7">The next seminar invite, or a phone call</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7;background:#F1E6E3">A monthly email and a steady LinkedIn feed</span>
+      <span style="padding:9pt 0;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-bottom:1px solid #D9D4C7">SEARCH</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7">Brochure-style service pages</span>
+      <span style="padding:9pt 10pt;border-bottom:1px solid #D9D4C7;background:#F1E6E3">Answers to what Cleveland pre-retirees actually ask</span>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">The win goes to whoever makes the online first impression as concrete and trustworthy as your seminar room.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>8</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="09 Four moves">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:18pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">08 / FOUR MOVES</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Four moves. Start with the first.</h2>
+    <div style="margin-top:12pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+      <div style="display:grid;grid-template-columns:0.5in minmax(0,1fr) 0.8in;gap:10pt;padding:7pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">01</span><div style="display:flex;flex-direction:column;gap:5pt"><span style="font-size:13pt;font-weight:600">Build the proof library.</span><span style="font-size:10.5pt;line-height:1.55;color:#3A3733;text-wrap:pretty">Ask happy clients for detailed Google reviews, with compliance sign-off first. Complete the Google profile, and turn the best client experiences into short stories or videos.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">MEASURE · reviews published · profile completeness · inquiries that mention reviews</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">0–3 MO</span></div>
+      <div style="display:grid;grid-template-columns:0.5in minmax(0,1fr) 0.8in;gap:10pt;padding:7pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">02</span><div style="display:flex;flex-direction:column;gap:4pt"><span style="font-size:13pt;font-weight:600">Start a monthly email to everyone who has attended.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733;text-wrap:pretty">Every seminar registrant already gave you an email. Send one useful email a month. AI can draft it from your posts; you and compliance review it.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">MEASURE · list size · opens · replies and meetings from email</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">0–3 MO</span></div><div style="display:grid;grid-template-columns:0.5in minmax(0,1fr) 0.8in;gap:10pt;padding:7pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">03</span><div style="display:flex;flex-direction:column;gap:5pt"><span style="font-size:13pt;font-weight:600">Make the first step concrete.</span><span style="font-size:10.5pt;line-height:1.55;color:#3A3733;text-wrap:pretty">Publish one fictional sample plan with no form in front of it. Spell out what the first meeting covers, make phone optional, and state a response time.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">MEASURE · completed inquiries · meetings held</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">1–3 MO</span></div>
+      <div style="display:grid;grid-template-columns:0.5in minmax(0,1fr) 0.8in;gap:10pt;padding:7pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">04</span><div style="display:flex;flex-direction:column;gap:5pt"><span style="font-size:13pt;font-weight:600">Post 2–3 times a week, LinkedIn first, on a schedule.</span><span style="font-size:10.5pt;line-height:1.55;color:#3A3733;text-wrap:pretty">Education, commentary, and analysis on what Cleveland pre-retirees are actually asking. Plan monthly, approve in one batch, schedule it. Same post to Facebook and Instagram. See page 6.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">MEASURE · posts per week · followers · website visits from social · inquiries</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">0–3 MO</span></div>
+    </div>
+    <div style="margin-top:12pt;border:1px solid #1A1A1A;padding:10pt 14pt;display:flex;flex-direction:column;gap:8pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">BEFORE ANY OF THAT · THIS WEEK</span>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5pt 14pt;font-size:10pt;line-height:1.45">
+        <span>☐ Fix the /what-we-do/ link</span>
+        <span>☐ Point "Disclosures" to a real page</span>
+        <span>☐ Add Events to the main menu</span>
+        <span>☐ Add hours to the Google profile</span>
+        <span>☐ Correct the BBB start date</span>
+        <span>☐ Claim the Trustburn listing</span>
+        <span>☐ Create @vitoufinancial on Instagram</span>
+        <span>☐ Add a newsletter signup to the site</span>
+        <span>☐ Website link in every social profile</span>
+      </div>
+    </div>
+    <div style="margin-top:auto;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>9</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="10 Beyond &amp; limits">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <sc-if value="{{ showOps }}" hint-placeholder-val="{{ true }}">
+      <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">09 / BEYOND MARKETING</div>
+      <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">The first technology win is usually the admin, not the planning software.</h2>
+      <div style="margin-top:14pt;display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;max-width:6.4in;text-wrap:pretty">
+        <p style="margin:0">You mentioned the team runs on Excel and Income Solver. I can't see your day-to-day from the outside, so I won't guess at your workflows. But in firms your size, with three advisers and a client-services lead, the first win is rarely the planning software. It's the repetitive work around it: turning every client meeting into clean, structured notes, keeping follow-ups from slipping, and making sure nothing a client said gets lost between the meeting and the file.</p>
+        <p style="margin:0">If it's useful, the first project I'd scope is meeting notes: every conversation captured, organized, and filed the same way, with a person checking the result. One workflow, measured against how you do it today. No rip-and-replace of anything that already works.</p>
+      </div>
+    </sc-if>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">{{ limitsLabel }}</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">What I couldn't see from the outside.</h2>
+    <div style="margin-top:14pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A;font-size:10.5pt;line-height:1.5">
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Website conversion rates and how fast inquiries get a response.</div>
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Seminar attendance trends, and whether seminars are paused or just not posted online.</div>
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Client volume and where new clients actually come from.</div>
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Paid advertising. Google's and Meta's ad libraries returned no verifiable data.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">13</sup></div>
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Local search rankings. Two small samples aren't a ranking audit.</div>
+      <div style="padding:8pt 0;border-bottom:1px solid #D9D4C7">Personal LinkedIn profiles and logged-in follower and engagement numbers.</div>
+    </div>
+    <p style="margin:10pt 0 0;font-size:10.5pt;line-height:1.5;color:#3A3733">Treat these as open questions, not conclusions. Most can be answered in one short conversation.</p>
+    <div style="margin-top:auto;border-top:1px solid #1A1A1A;padding-top:14pt;display:flex;justify-content:space-between;align-items:flex-end;gap:20pt">
+      <p style="margin:0;font-size:11pt;line-height:1.5;max-width:4.2in">Happy to walk through any of this on a call whenever works. The doc stands on its own.</p>
+      <div style="display:flex;flex-direction:column;gap:3pt;text-align:right"><span style="font-size:12pt;font-weight:600">James Bonaguro</span><span style="font-size:10.5pt">Intersection Strategies</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">james@intersectionstrategies.co</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">708-420-5462</span></div>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>10</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="11 Sources">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>Vitou Financial Services</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">APPENDIX / SOURCES &amp; METHOD</div>
+    <p style="margin:10pt 0 0;font-size:10pt;line-height:1.55;color:#3A3733;max-width:6.4in;text-wrap:pretty">Every fact is tagged by how it was established. <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#1A1A1A">RECHECKED</span> means re-verified on 15 October 2026. <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#1A1A1A">OBSERVED</span> means recorded during research passes on 10–13 October 2026. <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#1A1A1A">PUBLISHED</span> means a third-party industry study, cited as reported, with its year. Figures marked "est." are arithmetic on public numbers and should be read as directional.</p>
+    <div style="margin-top:14pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A;font-size:9.5pt;line-height:1.45">
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">1</span><span>Vitou Financial Services homepage: guide form, process link, menu, footer. vitoufinancial.com</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">2</span><span>Team page: bios, credentials, join dates. vitoufinancial.com/about</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">3</span><span>Events page: no upcoming dates listed. vitoufinancial.com/attend-an-event</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">4</span><span>Schedule-a-meeting page: request form, no times shown. vitoufinancial.com/schedule-a-meeting</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">5</span><span>Eventbrite organizer "Dan &amp; Jim Vitou": 27 events, 765 attendees, 36 followers. Sample listing, Elyria, 15 Feb 2023, rechecked. eventbrite.com</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">6</span><span>BBB business profile: A+, not accredited, one review, 1998 start date. bbb.org</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">7</span><span>Google Business Profile: two reviews at 5.0, "Add hours" prompt. google.com/maps</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">8</span><span>Trustburn: 11 reviews, 4.0 average, about three years old, listing unclaimed. trustburn.com/reviews/vitou-financial-services</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">9</span><span>AE Wealth Management, Form ADV Part 2A: SEC-registered investment adviser.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">10</span><span>Vitou Financial Services Facebook page: roughly weekly posts, Sept–Oct 2026. Audience size not visible.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">11</span><span>Wealth Enhancement Group, Rocky River location page: local FAQs, planning deliverables. wealthenhancement.com</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">12</span><span>Adviser directories: SmartAsset, Indyfin, Advisor Registry.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">13</span><span>Google Ads Transparency Center and Meta Ad Library: no verifiable ad creatives returned.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">14</span><span>LinkedIn company page: sparse, 2–10 employees listed. linkedin.com/company/vitou-financial-services</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">OBSERVED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">15</span><span>Web search for Instagram, YouTube, and newsletter presence: none found. Website links only LinkedIn and Facebook.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">16</span><span>The Vitou Group, thevitougroup.com: separately branded firm that appears in name searches.</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">RECHECKED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">17</span><span>Hartford Funds investor survey (2021), via Financial Advisor magazine: ~50% say social affects adviser choice; 20% call it the deciding factor. fa-mag.com</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">PUBLISHED</span></div>
+      <div style="display:grid;grid-template-columns:0.3in minmax(0,1fr) 0.95in;gap:8pt;padding:3pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D">18</span><span>Putnam Investments Social Advisor Study (2020), via Financial Advisor magazine: LinkedIn leads adviser social use at 85%, Facebook 65%, Instagram 46%. fa-mag.com</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;text-align:right">PUBLISHED</span></div>
+    </div>
+    <p style="margin:12pt 0 0;font-size:9pt;line-height:1.5;color:#6B665D;max-width:6.4in">Public listings change. Recheck any item before acting on it. No forms were submitted and no one at the firm was contacted during this research.</p>
+    <div style="margin-top:auto;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Prepared for Vitou Financial Services<br></span><span>11</span></div>
+  </div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showPersonalNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;showOpsNote&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const showOps = this.props.showOpsNote ?? true;
+    return {
+      showOps,
+      showNote: this.props.showPersonalNote ?? true,
+      limitsLabel: showOps ? "10 / LIMITS" : "09 / LIMITS"
+    };
+  }
+}
+</script>
+</body>
+</html>

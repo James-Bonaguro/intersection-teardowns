@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>doc-page:not(:defined){visibility:hidden}a{color:#8B1E2D}a:hover{color:#1A1A1A}</style>
+<script src="./doc-page.js"></script>
+</helmet>
+<doc-page>
+
+<section class="page" data-screen-label="01 Cover">
+  <div style="height:100%;box-sizing:border-box;position:relative;overflow:hidden;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;border-left:0.18in solid #8B1E2D;padding:0.7in 0.75in 0.6in 0.7in;display:flex;flex-direction:column">
+    <div style="position:absolute;right:-0.4in;bottom:-1.2in;font-size:8.5in;line-height:1;font-weight:600;color:#EDE9DF;pointer-events:none">{{ initial }}</div>
+    <div style="position:relative;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:10pt"><span>Confidential</span><span>Prepared for {{ preparedFor }}</span></div>
+    <div style="position:relative;margin-top:2.1in;display:flex;flex-direction:column;gap:14pt">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:11pt;letter-spacing:0.22em;text-transform:uppercase;color:#8B1E2D">Company Teardown</div>
+      <h1 style="margin:0;font-size:56pt;font-weight:600;line-height:1;letter-spacing:-0.02em;text-wrap:balance">{{ companyName }}</h1>
+      <p style="margin:6pt 0 0;font-size:14pt;line-height:1.45;max-width:4.6in;color:#3A3733">An outside-in review of the business model, competitive position, risks, and opportunities.</p>
+    </div>
+    <div style="position:relative;margin-top:auto;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #1A1A1A">
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">DATE</span><span style="font-size:11pt">{{ reportDate }}</span></div>
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">PREPARED FOR</span><span style="font-size:11pt">{{ preparedFor }}</span></div>
+      <div style="padding:10pt 10pt 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">PREPARED BY</span><span style="font-size:11pt">Intersection Strategies</span></div>
+      <div style="padding:10pt 0 0 0;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;color:#6B665D">VERSION</span><span style="font-size:11pt;font-family:'IBM Plex Mono',monospace">v1.0</span></div>
+    </div>
+    <p style="position:relative;margin:18pt 0 0;font-size:9pt;line-height:1.5;color:#6B665D;max-width:5.2in">This report is based on publicly available information and is provided for the recipient's internal use only. Not investment advice. Do not distribute.</p>
+  </div>
+</section>
+
+<section class="page" data-screen-label="02 Verdict">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:28pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">01 / THE VERDICT</div>
+    <h2 style="margin:8pt 0 0;font-size:24pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Best-in-class product sitting on a fragile revenue base.</h2>
+    <div style="margin-top:18pt;border:1px solid #1A1A1A;padding:14pt 16pt;display:flex;flex-direction:column;gap:6pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">BOTTOM LINE</span>
+      <p style="margin:0;font-size:11pt;line-height:1.55;text-wrap:pretty">[Company] has the strongest routing product in its segment and pricing power it isn't using. But two enterprise accounts make up 38% of revenue, and sales hiring has stalled. Over the next two quarters, the priority is to diversify the customer base before raising again.</p>
+    </div>
+    <div style="margin-top:20pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">SCORECARD</div>
+    <div style="margin-top:8pt;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #1A1A1A;border-left:1px solid #D9D4C7">
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt"><span style="font-size:11pt;font-weight:600">Moat</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">STRONG</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">4 / 5</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt"><span style="font-size:11pt;font-weight:600">Growth</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt;align-self:flex-start">MIXED</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">3 / 5</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt"><span style="font-size:11pt;font-weight:600">Unit Economics</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">STRONG</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">4 / 5</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt"><span style="font-size:11pt;font-weight:600">Execution</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt;align-self:flex-start">MIXED</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">3 / 5</span></div>
+      <div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt"><span style="font-size:11pt;font-weight:600">Social &amp; Email</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt;align-self:flex-start">MIXED</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">3 / 5</span></div><div style="padding:10pt;border-right:1px solid #D9D4C7;border-bottom:1px solid #D9D4C7;display:flex;flex-direction:column;gap:8pt;background:#F1E6E3"><span style="font-size:11pt;font-weight:600">Risk</span><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt;align-self:flex-start">HIGH</span><span style="font-family:'IBM Plex Mono',monospace;font-size:10pt">2 / 5</span></div>
+    </div>
+    <div style="margin-top:24pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">3 THINGS TO KNOW</div>
+    <div style="margin-top:8pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:10pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">1</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">Revenue is concentrated in two accounts.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Losing either would cut revenue by roughly a fifth.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup></span></div></div>
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:10pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">2</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">Pricing sits 20% below the nearest rival.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Customers aren't leaving over price. There is room to raise it.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">2</sup></span></div></div>
+      <div style="display:grid;grid-template-columns:0.4in 1fr;padding:10pt 0;border-bottom:1px solid #D9D4C7"><span style="font-family:'IBM Plex Mono',monospace;font-size:14pt;color:#8B1E2D">3</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12pt;font-weight:600">Sales hiring has stalled for two quarters.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Growth targets assume a team that doesn't exist yet.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">3</sup></span></div></div>
+    </div>
+    <div style="margin-top:auto;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>2</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="03 Business Model">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:28pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">02 / BUSINESS MODEL</div>
+    <h2 style="margin:8pt 0 0;font-size:24pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Revenue is concentrated in two enterprise customers.</h2>
+    <div style="margin-top:18pt;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0.35in">
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <p style="margin:0">[Company] sells annual SaaS contracts to mid-market logistics operators, priced per vehicle per month. Most revenue comes from subscriptions, with a smaller share from onboarding and integration fees.</p>
+        <p style="margin:0">Two enterprise accounts, signed in [year], now make up an estimated 38% of revenue.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">1</sup> Both contracts come up for renewal within the next 18 months. Public case studies suggest both are expanding usage, which lowers the near-term risk but not the structural one.</p>
+        <p style="margin:0">The long tail of roughly [n] smaller customers is healthy. Reviews cite ease of setup and support quality, and job postings point to a self-serve tier in development.</p>
+        <div style="margin-top:8pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">HOW MONEY FLOWS</div>
+        <div style="display:grid;grid-template-columns:1fr 18pt 1fr 18pt 1fr;align-items:center;font-size:10pt;line-height:1.35">
+          <div style="border:1px solid #1A1A1A;padding:8pt;text-align:center">Fleet operators</div>
+          <span style="text-align:center;font-family:'IBM Plex Mono',monospace;color:#8B1E2D">→</span>
+          <div style="border:1px solid #8B1E2D;background:#F1E6E3;padding:8pt;text-align:center">Per-vehicle subscription</div>
+          <span style="text-align:center;font-family:'IBM Plex Mono',monospace;color:#8B1E2D">→</span>
+          <div style="border:1px solid #1A1A1A;padding:8pt;text-align:center">Add-ons &amp; integrations</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14pt;border-left:1px solid #D9D4C7;padding-left:0.25in">
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">$4.2M</span><span style="font-size:10pt;color:#3A3733">Estimated ARR</span></div>
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">38%</span><span style="font-size:10pt;color:#3A3733">Revenue from top two customers</span></div>
+        <div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">~85%</span><span style="font-size:10pt;color:#3A3733">Recurring share of revenue</span></div>
+        <blockquote style="margin:4pt 0 0;font-size:12pt;font-style:italic;line-height:1.45;border-top:1px solid #D9D4C7;padding-top:10pt">"We'd struggle to switch, it's wired into dispatch."<span style="display:block;margin-top:6pt;font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">— Customer review, [source]</span></blockquote>
+      </div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">The model is sound, but the customer mix isn't. Every quarter the two big accounts stay above 30% of revenue lowers the company's valuation multiple.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>3</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="04 Market">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:28pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">03 / MARKET &amp; COMPETITORS</div>
+    <h2 style="margin:8pt 0 0;font-size:24pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">The best product in the segment, at the lowest price.</h2>
+    <table style="margin-top:18pt;width:100%;border-collapse:collapse;font-size:10pt">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.08em;color:#6B665D;text-align:left"><th style="padding:6pt 6pt 6pt 0;font-weight:400">COMPANY</th><th style="padding:6pt;font-weight:400">FOCUS</th><th style="padding:6pt;font-weight:400;text-align:right">PRICE / VEH.</th><th style="padding:6pt;font-weight:400;text-align:right">EST. ARR</th><th style="padding:6pt 0 6pt 6pt;font-weight:400;text-align:right">RATING</th></tr></thead>
+      <tbody style="font-variant-numeric:tabular-nums">
+        <tr style="background:#F1E6E3;border-left:3px solid #8B1E2D"><td style="padding:7pt 6pt 7pt 8pt;font-weight:600">{{ companyName }}</td><td style="padding:7pt 6pt">Mid-market routing</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$32</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$4.2M</td><td style="padding:7pt 0 7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">4.7</td></tr>
+        <tr><td style="padding:7pt 6pt 7pt 8pt">[Competitor A]</td><td style="padding:7pt 6pt">Enterprise TMS</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$48</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$22M</td><td style="padding:7pt 0 7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">4.1</td></tr>
+        <tr style="background:#EFEBE2"><td style="padding:7pt 6pt 7pt 8pt">[Competitor B]</td><td style="padding:7pt 6pt">SMB dispatch</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$40</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$6.5M</td><td style="padding:7pt 0 7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">4.3</td></tr>
+        <tr><td style="padding:7pt 6pt 7pt 8pt">[Competitor C]</td><td style="padding:7pt 6pt">Telematics bundle</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$55</td><td style="padding:7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">$11M</td><td style="padding:7pt 0 7pt 6pt;text-align:right;font-family:'IBM Plex Mono',monospace">3.9</td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:22pt;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0.35in;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:6pt">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">POSITIONING</span>
+        <div style="position:relative;aspect-ratio:1;border:1px solid #1A1A1A;background:linear-gradient(#D9D4C7,#D9D4C7) center/1px 100% no-repeat,linear-gradient(#D9D4C7,#D9D4C7) center/100% 1px no-repeat">
+          <span style="position:absolute;left:6pt;top:6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">PREMIUM</span>
+          <span style="position:absolute;right:6pt;bottom:6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">BROAD →</span>
+          <span style="position:absolute;left:6pt;bottom:6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D">BUDGET</span>
+          <div style="position:absolute;left:28%;top:62%;display:flex;align-items:center;gap:4pt;font-size:9.5pt;font-weight:600"><span style="width:10pt;height:10pt;border-radius:50%;background:#8B1E2D"></span>{{ companyName }}</div>
+          <div style="position:absolute;left:66%;top:18%;display:flex;align-items:center;gap:4pt;font-size:9.5pt"><span style="width:8pt;height:8pt;border-radius:50%;background:#1A1A1A"></span>A</div>
+          <div style="position:absolute;left:22%;top:34%;display:flex;align-items:center;gap:4pt;font-size:9.5pt"><span style="width:8pt;height:8pt;border-radius:50%;background:#1A1A1A"></span>B</div>
+          <div style="position:absolute;left:72%;top:44%;display:flex;align-items:center;gap:4pt;font-size:9.5pt"><span style="width:8pt;height:8pt;border-radius:50%;background:#1A1A1A"></span>C</div>
+        </div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">READING THE MAP</span>
+        <p style="margin:0">[Company] is the only specialist priced in budget territory, yet it rates higher than every rival.<sup style="font-family:'IBM Plex Mono',monospace;color:#8B1E2D;font-size:8pt">2</sup></p>
+        <p style="margin:0">Competitor A is moving down-market with a lighter tier. That is the most direct threat over the next 12 months.</p>
+      </div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">A 15–20% price increase on new contracts would still undercut every rival. Act before Competitor A's lighter tier sets a new reference price.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>4</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="05 Social & Email">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:26pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">05 / SOCIAL &amp; EMAIL</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Strong on LinkedIn, silent everywhere a buyer goes to learn.</h2>
+    <table style="margin-top:16pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.45">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:5pt 6pt 5pt 0;font-weight:400;width:26%">CHANNEL</th><th style="padding:5pt 6pt;font-weight:400;width:17%">STATUS</th><th style="padding:5pt 0 5pt 6pt;font-weight:400">WHAT A PROSPECT SEES</th></tr></thead>
+      <tbody><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">LinkedIn company page</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#1A1A1A;color:#F7F5F0;padding:2pt 6pt">ACTIVE</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">Posts 2–3 times a week, mostly product news. [n] followers.</td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Personal LinkedIn (founders)</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;border:1px solid #1A1A1A;padding:1pt 6pt">THIN</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">The CEO posts monthly. The CTO, the public face of the product, rarely posts.</td></tr><tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Instagram</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">MISSING</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">No account found, and none linked from the site.</td></tr><tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Email newsletter</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">MISSING</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">No signup on the site. Customers get release notes only.</td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">YouTube &amp; video</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;border:1px solid #1A1A1A;padding:1pt 6pt">THIN</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">Four product demos, the latest 9 months old.</td></tr><tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Facebook</td><td style="padding:8pt 6pt;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;white-space:nowrap;background:#E8E4DA;padding:2pt 6pt">NOT ASSESSED</span></td><td style="padding:8pt 0 8pt 6pt;vertical-align:top">Page exists. Needs a logged-in review.</td></tr></tbody>
+    </table>
+    <div style="margin-top:18pt;display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0.35in">
+      <div style="display:flex;flex-direction:column;gap:10pt;font-size:10.5pt;line-height:1.55;text-wrap:pretty">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">WHY IT MATTERS HERE</span>
+        <p style="margin:0">[Company]'s buyers are operations managers who research quietly before they ever book a demo. LinkedIn reaches them only when they're already looking.</p><p style="margin:0">A monthly email to trial users and past demo requests would keep [Company] in front of buyers who weren't ready the first time.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14pt;border-left:1px solid #D9D4C7;padding-left:0.25in"><div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">[n]</span><span style="font-size:10pt;color:#3A3733">LinkedIn followers</span></div><div style="display:flex;flex-direction:column;gap:2pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">0</span><span style="font-size:10pt;color:#3A3733">Ways to subscribe to updates</span></div></div>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">Start a monthly email to the list [Company] already has. Post on LinkedIn first, share it to Facebook and Instagram, and link the site in every profile.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>5</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="06 Social front door">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:14pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">06 / SOCIAL IS THE FRONT DOOR</div>
+    <h2 style="margin:8pt 0 0;font-size:22pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Attention is the job now. Social is where authority gets built.</h2>
+    <p style="margin:8pt 0 0;font-size:10.5pt;line-height:1.55;max-width:6.4in;text-wrap:pretty">Social media is how most people find their way to a website today, and [Company]'s buyers vet vendors there before they reach out. The company that shows up every week, with a point of view, becomes the name buyers already trust when they're ready.</p>
+    <div style="margin-top:8pt;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0.25in">
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">[x%]</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">[Industry stat on social and buying decisions, source, year]</span></div>
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">[x%]</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">[Industry stat, source, year]</span></div>
+      <div style="display:flex;flex-direction:column;gap:3pt;border-top:2px solid #8B1E2D;padding-top:8pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:24pt;font-weight:500;color:#8B1E2D">[x%]</span><span style="font-size:10pt;line-height:1.4;color:#3A3733">[Channel stat for this industry, source, year]</span></div>
+    </div>
+    <div style="margin-top:10pt;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:0.3in">
+      <div style="display:flex;flex-direction:column">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">THE STANDARD</span>
+        <table style="margin-top:6pt;width:100%;border-collapse:collapse;font-size:9.5pt;line-height:1.4">
+          <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.06em;color:#6B665D;text-align:left"><th style="padding:4pt 6pt 4pt 0;font-weight:400">CHANNEL</th><th style="padding:4pt 6pt;font-weight:400">CADENCE</th><th style="padding:4pt 0 4pt 6pt;font-weight:400">ROLE</th></tr></thead>
+          <tbody>
+            <tr style="border-bottom:1px solid #D9D4C7;background:#F1E6E3"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">LinkedIn</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">2–3× / WEEK</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Leads. Company page plus founders personally.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Facebook</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">SAME POST</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Cross-post the LinkedIn post.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Instagram</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">SAME POST</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Cross-post. Create the account if missing.</td></tr>
+            <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:5pt 6pt 5pt 0;font-weight:600;vertical-align:top">Email</td><td style="padding:5pt 6pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;vertical-align:top;white-space:nowrap">MONTHLY</td><td style="padding:5pt 0 5pt 6pt;vertical-align:top">Best posts of the month, to the whole list.</td></tr>
+          </tbody>
+        </table>
+        <span style="margin-top:8pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">ON AUTOPILOT</span>
+        <p style="margin:6pt 0 0;font-size:10pt;line-height:1.5;text-wrap:pretty">A month of posts planned in one sitting, reviewed in one batch, then scheduled. Nothing depends on someone remembering to post on a Tuesday.</p>
+      </div>
+      <div style="display:flex;flex-direction:column">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">THE MIX</span>
+        <div style="margin-top:6pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Education</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Plain answers to the questions customers already ask.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Commentary</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">A take on the week’s industry news and what it means for buyers.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Analysis</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Breaking down one trend, rule, or number.</span></div>
+          <div style="display:flex;flex-direction:column;gap:2pt;padding:4pt 0;border-bottom:1px solid #D9D4C7"><span style="font-size:10.5pt;font-weight:600">Proof</span><span style="font-size:9.5pt;line-height:1.45;color:#3A3733">Customer stories, results, behind the scenes.</span></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:10pt;border:1px solid #1A1A1A;padding:9pt 14pt;display:flex;flex-direction:column;gap:5pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">NEVER RUN OUT OF TOPICS</span>
+      <p style="margin:0;font-size:10pt;line-height:1.5;text-wrap:pretty">[Company]'s team knows the subject. A simple scraping setup (Firecrawl or similar, feeding a spreadsheet) can pull what buyers are asking each month in forums, search, and the news, and rank it by how often it comes up. The team picks, writes the take, and AI helps draft.</p>
+    </div>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:11pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">One post, three channels, two to three times a week, on a schedule.</p>
+    </div>
+    <div style="margin-top:12pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>6</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="07 Risks">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:28pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">08 / RISKS &amp; RED FLAGS</div>
+    <h2 style="margin:8pt 0 0;font-size:24pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">The biggest risks are commercial, not technical.</h2>
+    <div style="margin-top:18pt;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#D9D4C7;border:1px solid #D9D4C7">
+      <div style="background:#FFFDF8;padding:10pt 12pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;color:#6B665D">STRENGTHS</span><span style="font-size:10.5pt;line-height:1.5">Top-rated product · deep dispatch integration · efficient support</span></div>
+      <div style="background:#EFEBE2;padding:10pt 12pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;color:#6B665D">WEAKNESSES</span><span style="font-size:10.5pt;line-height:1.5">Customer concentration · thin sales team · underpriced</span></div>
+      <div style="background:#EFEBE2;padding:10pt 12pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;color:#6B665D">OPPORTUNITIES</span><span style="font-size:10.5pt;line-height:1.5">Self-serve tier · price increase · adjacent cold-chain segment</span></div>
+      <div style="background:#F1E6E3;padding:10pt 12pt;display:flex;flex-direction:column;gap:4pt"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.14em;color:#8B1E2D">THREATS</span><span style="font-size:10.5pt;line-height:1.5">Competitor A down-market push · renewal risk on top accounts</span></div>
+    </div>
+    <div style="margin-top:22pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#6B665D">RISK REGISTER</div>
+    <table style="margin-top:6pt;width:100%;border-collapse:collapse;font-size:10pt;line-height:1.45">
+      <thead><tr style="border-bottom:1px solid #1A1A1A;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.08em;color:#6B665D;text-align:left"><th style="padding:6pt 6pt 6pt 0;font-weight:400;width:28%">RISK</th><th style="padding:6pt;font-weight:400">WHY IT MATTERS</th><th style="padding:6pt 0 6pt 6pt;font-weight:400;width:13%;text-align:right">SEVERITY</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Top-account churn</td><td style="padding:8pt 6pt;vertical-align:top">Two renewals within 18 months cover 38% of revenue.</td><td style="padding:8pt 0 8pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">HIGH</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Rival price compression</td><td style="padding:8pt 6pt;vertical-align:top">Competitor A's lighter tier could reset buyer expectations.</td><td style="padding:8pt 0 8pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#8B1E2D;color:#F7F5F0;padding:2pt 6pt">HIGH</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Sales capacity</td><td style="padding:8pt 6pt;vertical-align:top">Two open roles have gone unfilled for six months.</td><td style="padding:8pt 0 8pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;border:1px solid #1A1A1A;padding:1pt 6pt">MED</span></td></tr>
+        <tr style="border-bottom:1px solid #D9D4C7"><td style="padding:8pt 6pt 8pt 0;font-weight:600;vertical-align:top">Key-person dependency</td><td style="padding:8pt 6pt;vertical-align:top">The CTO is the public face of the product and its integrations.</td><td style="padding:8pt 0 8pt 6pt;text-align:right;vertical-align:top"><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;background:#E8E4DA;padding:2pt 6pt">LOW</span></td></tr>
+      </tbody>
+    </table>
+    <div style="margin-top:auto;background:#F1E6E3;border-top:2px solid #8B1E2D;padding:12pt 14pt;display:flex;flex-direction:column;gap:4pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">SO WHAT</span>
+      <p style="margin:0;font-size:11pt;line-height:1.5">Two of the four risks come from the same root cause: too few customers and too few people selling. Fixing go-to-market fixes both.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Sources: see Appendix</span><span>7</span></div>
+  </div>
+</section>
+
+<section class="page" data-screen-label="08 Recommendations">
+  <div style="height:100%;box-sizing:border-box;background:#F7F5F0;color:#1A1A1A;font-family:'Source Serif 4',Georgia,serif;padding:0.55in 0.7in 0.5in;display:flex;flex-direction:column">
+    <div style="display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.12em;text-transform:uppercase;color:#6B665D;border-bottom:1px solid #D9D4C7;padding-bottom:8pt"><span>{{ companyName }}</span><span>Company Teardown</span></div>
+    <div style="margin-top:28pt;font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">10 / RECOMMENDATIONS</div>
+    <h2 style="margin:8pt 0 0;font-size:24pt;font-weight:600;line-height:1.12;letter-spacing:-0.01em;text-wrap:balance">Three moves, ranked by impact.</h2>
+    <div style="margin-top:18pt;display:flex;flex-direction:column;border-top:1px solid #1A1A1A">
+      <div style="display:grid;grid-template-columns:0.5in 1fr 0.9in;gap:10pt;padding:12pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">01</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12.5pt;font-weight:600">Raise prices on new contracts by 15%.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Still the cheapest specialist. Fund the sales hires from the margin.</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">0–3 MO</span></div>
+      <div style="display:grid;grid-template-columns:0.5in 1fr 0.9in;gap:10pt;padding:12pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">02</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12.5pt;font-weight:600">Lock in early renewals with both top accounts.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Trade a multi-year term for a modest discount.</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">0–6 MO</span></div>
+      <div style="display:grid;grid-template-columns:0.5in 1fr 0.9in;gap:10pt;padding:12pt 0;border-bottom:1px solid #D9D4C7;align-items:baseline"><span style="font-family:'IBM Plex Mono',monospace;font-size:18pt;color:#8B1E2D">03</span><div style="display:flex;flex-direction:column;gap:3pt"><span style="font-size:12.5pt;font-weight:600">Ship the self-serve tier to widen the base.</span><span style="font-size:10.5pt;line-height:1.5;color:#3A3733">Target 200 small fleets to cut concentration below 25%.</span></div><span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;text-align:right">6–12 MO</span></div>
+    </div>
+    <div style="margin-top:auto;border-top:1px solid #1A1A1A;padding-top:12pt;display:flex;flex-direction:column;gap:8pt">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:9pt;letter-spacing:0.16em;color:#8B1E2D">APPENDIX / SOURCES</span>
+      <ol style="margin:0;padding-left:16pt;display:flex;flex-direction:column;gap:4pt;font-size:9pt;line-height:1.5;color:#3A3733">
+        <li>[Source title], [publisher], [date]. [URL]</li>
+        <li>[Source title], [publisher], [date]. [URL]</li>
+        <li>[Source title], [publisher], [date]. [URL]</li>
+      </ol>
+      <p style="margin:6pt 0 0;font-size:9pt;line-height:1.5;color:#6B665D">Figures marked "est." are derived from public signals and should be read as directional.</p>
+    </div>
+    <div style="margin-top:14pt;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:9pt;color:#6B665D;border-top:1px solid #D9D4C7;padding-top:8pt"><span>Prepared for {{ preparedFor }}</span><span>8</span></div>
+  </div>
+</section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;companyName&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Northwind Freight&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;preparedFor&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;[Client Name]&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;reportDate&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;October 2026&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const companyName = this.props.companyName ?? "Northwind Freight";
+    return {
+      companyName,
+      initial: (companyName.trim()[0] || "").toUpperCase(),
+      preparedFor: this.props.preparedFor ?? "[Client Name]",
+      reportDate: this.props.reportDate ?? "October 2026"
+    };
+  }
+}
+</script>
+</body>
+</html>
